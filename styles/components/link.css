@@ -1,6 +1,6 @@
 .c-link {
   @apply border-b border-solid border-blue-100;
-  @apply text-violet-400 font-semibold;
+  @apply text-slate-800 font-semibold;
   @apply transition duration-150 ease-in-out;
 }
 

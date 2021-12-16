@@ -6,8 +6,8 @@ interface BgQuadrants {
 }
 
 const BgQuadrants = ({
-  primary = '#EFF0FC',
-  secondary = '#A3A8BF',
+  primary = '#E2E8F0',
+  secondary = '#CBD5E1',
 }): ReactElement => {
   return (
     <svg

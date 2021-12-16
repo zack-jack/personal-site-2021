@@ -1,8 +1,13 @@
 import React, { ReactElement } from 'react';
 import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
+
+const TechnologiesGrid = dynamic(
+  () => import('../components/TechnologiesGrid')
+);
 
 const Home: NextPage = (): ReactElement => {
   return (
@@ -57,6 +62,21 @@ const Home: NextPage = (): ReactElement => {
               <a className="c-link">{"brands I've worked with"}</a>
             </Link>{' '}
             {'in the sections below.'}
+          </p>
+        </div>
+      </section>
+      <section id="skills" className="home-skills">
+        <h3 className="home-skills__heading">Technologies</h3>
+        <div className="home-skills__grid-wrapper mt-16">
+          <TechnologiesGrid />
+        </div>
+        <div className="home-skills__copy mt-16">
+          <p>
+            Above are some of my favorite tools to utilize for web development.
+          </p>
+          <p className="mt-8">
+            JavaScript / TypeScript is the language that I am most proficient
+            with, but I also enjoy Python and Go from time to time.
           </p>
         </div>
       </section>

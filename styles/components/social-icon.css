@@ -1,5 +1,5 @@
 .c-social-icon__path {
-  @apply fill-gray-300;
+  @apply fill-slate-800;
   @apply transition duration-150 ease-in-out;
 }
 

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fill: (theme) => ({
       white: theme('colors.white'),
-      'gray-300': theme('colors.gray.300'),
+      'slate-800': theme('colors.slate.800'),
       'blue-100': theme('colors.blue.100'),
       'blue-200': theme('colors.blue.200'),
     }),
@@ -17,12 +17,6 @@ module.exports = {
         transparent: 'transparent',
         black: '#000',
         white: '#FFF',
-        gray: {
-          ...colors.gray,
-          100: '#EFF0FC',
-          200: '#A3A8BF',
-          300: '#050408',
-        },
         blue: {
           ...colors.blue,
           100: '#4F3DFF',
@@ -39,6 +33,13 @@ module.exports = {
       fontFamily: {
         heading: ['Poppins, Helvetica, Arial, sans-serif'],
         body: ['Source Sans Pro, Helvetica, Arial, sans-serif'],
+      },
+      screens: {
+        sm: '375px',
+        smd: '481px', // schmedium
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
       },
     },
   },

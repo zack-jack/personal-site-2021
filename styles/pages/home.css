@@ -29,5 +29,24 @@
 
 .home-about__copy {
   @apply text-center;
-  line-height: 2.6;
+  line-height: 2.2;
+}
+
+/* Skills section */
+.home-skills {
+  @apply px-6 py-20;
+  @apply bg-slate-100;
+}
+
+.home-skills__heading {
+  @apply font-bold text-center uppercase;
+}
+
+.home-skills__grid-wrapper {
+  @apply flex justify-center items-center;
+}
+
+.home-skills__copy {
+  @apply text-center;
+  line-height: 2.2;
 }

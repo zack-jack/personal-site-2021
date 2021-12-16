@@ -1,0 +1,15 @@
+.technologies-grid {
+  @apply flex flex-wrap px-6;
+  gap: calc(50% - 96px);
+  row-gap: 40px;
+
+  @media screen(sm) {
+    @apply gap-14 px-0;
+    width: calc((64px * 3) + (56px * 2));
+  }
+
+  @media screen(smd) {
+    @apply gap-20;
+    width: calc((64px * 3) + (80px * 2));
+  }
+}

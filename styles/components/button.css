@@ -17,7 +17,7 @@
 .c-btn--secondary {
   @apply bg-white;
   @apply border-white;
-  @apply text-violet-400;
+  @apply text-slate-800;
 }
 
 .c-btn--secondary:hover {

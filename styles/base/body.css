@@ -1,3 +1,4 @@
 body {
-  @apply text-base text-violet-400 font-body font-normal;
+  @apply font-body font-normal;
+  @apply text-base text-slate-800;
 }
