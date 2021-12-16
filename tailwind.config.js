@@ -9,6 +9,7 @@ module.exports = {
     fill: (theme) => ({
       white: theme('colors.white'),
       'gray-300': theme('colors.gray.300'),
+      'blue-100': theme('colors.blue.100'),
       'blue-200': theme('colors.blue.200'),
     }),
     extend: {
@@ -24,14 +25,15 @@ module.exports = {
         },
         blue: {
           ...colors.blue,
-          100: '#2D26FB',
-          200: '#150DFB',
+          100: '#4F3DFF',
+          200: '#3824ff',
         },
         violet: {
           ...colors.violet,
           100: '#9FA5F6',
           200: '#65669F',
           300: '#484764',
+          400: '#0C0A1F',
         },
       },
       fontFamily: {

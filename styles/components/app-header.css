@@ -5,7 +5,7 @@
 }
 
 .app-header__logo {
-  @apply font-heading font-bold text-xl;
+  @apply font-heading font-bold text-2xl;
   @apply transition duration-150 ease-in-out;
 }
 

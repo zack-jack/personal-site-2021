@@ -1,0 +1,25 @@
+.c-btn {
+  @apply flex items-center justify-center;
+  @apply w-full;
+  @apply px-6 py-4;
+  @apply bg-blue-100;
+  @apply border border-solid border-blue-100 rounded-full;
+  @apply text-lg text-white font-bold tracking-wide whitespace-nowrap;
+  @apply shadow-md;
+  @apply transition duration-150 ease-in-out;
+}
+
+.c-btn:hover {
+  @apply bg-blue-200;
+  @apply shadow-lg;
+}
+
+.c-btn--secondary {
+  @apply bg-white;
+  @apply border-white;
+  @apply text-violet-400;
+}
+
+.c-btn--secondary:hover {
+  @apply bg-white;
+}

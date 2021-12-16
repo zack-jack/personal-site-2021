@@ -1,0 +1,33 @@
+/* Intro section */
+.home-intro {
+  @apply flex flex-col grow justify-between;
+  @apply px-6 pb-20;
+  @apply text-center;
+  height: calc(100vh - 112px); /* height minus header */
+}
+
+.home-intro__heading-wrapper {
+  @apply flex flex-col grow justify-center;
+}
+
+.home-intro__subheading {
+  @apply font-normal;
+}
+
+.home-intro__actions {
+  @apply flex flex-col items-center justify-center;
+}
+
+/* About section */
+.home-about {
+  @apply px-6 py-32;
+}
+
+.home-about__heading {
+  @apply text-center;
+}
+
+.home-about__copy {
+  @apply text-center;
+  line-height: 2.6;
+}

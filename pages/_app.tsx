@@ -19,7 +19,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Zack Jackson | Front End Developer</title>
       </Head>
 
-      <div id="app" className="relative flex flex-col min-h-screen">
+      <div
+        id="app"
+        className="relative flex flex-col min-h-screen overflow-hidden"
+      >
         <AppHeader />
         <main id="main" className="flex flex-col grow">
           <Component {...pageProps} />

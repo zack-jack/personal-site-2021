@@ -1,0 +1,10 @@
+.c-link {
+  @apply border-b border-solid border-blue-100;
+  @apply text-violet-400 font-semibold;
+  @apply transition duration-150 ease-in-out;
+}
+
+.c-link:hover {
+  @apply border-none;
+  @apply text-blue-100;
+}
