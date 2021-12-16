@@ -1,0 +1,8 @@
+.c-social-icon__path {
+  @apply fill-gray-300;
+  @apply transition duration-150 ease-in-out;
+}
+
+.c-social-icon:hover .c-social-icon__path {
+  @apply fill-blue-200;
+}

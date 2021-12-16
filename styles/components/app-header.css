@@ -1,8 +1,14 @@
 .app-header {
   @apply flex items-center justify-between;
+  @apply w-full;
   @apply px-6 py-10;
 }
 
 .app-header__logo {
   @apply font-heading font-bold text-xl;
+  @apply transition duration-150 ease-in-out;
+}
+
+.app-header__logo:hover {
+  @apply text-blue-200;
 }

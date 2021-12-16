@@ -1,0 +1,32 @@
+.c-nav-menu-mobile {
+  @apply flex grow items-center justify-end;
+  @apply pb-20 pr-6;
+  padding-top: 117px; /* Header height */
+}
+
+.c-nav-menu-mobile__wrapper {
+  @apply absolute inset-0;
+  @apply flex flex-col;
+  @apply h-screen;
+  @apply bg-white;
+  @apply overflow-hidden z-20;
+}
+
+.c-nav-menu-mobile__menu-item {
+  @apply flex justify-end;
+}
+
+.c-nav-menu-mobile__link {
+  @apply p-6 pr-0;
+  @apply text-4xl text-gray-300;
+  @apply font-heading font-bold uppercase tracking-widest;
+}
+
+.c-nav-menu-mobile__link:hover {
+  @apply text-blue-200;
+}
+
+.c-nav-menu-mobile__socials {
+  @apply flex items-center justify-center;
+  @apply py-6;
+}

@@ -6,6 +6,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fill: (theme) => ({
+      white: theme('colors.white'),
+      'gray-300': theme('colors.gray.300'),
+      'blue-200': theme('colors.blue.200'),
+    }),
     extend: {
       colors: {
         transparent: 'transparent',
