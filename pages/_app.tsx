@@ -1,5 +1,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import AppHeader from '../components/AppHeader';
+import AppFooter from '../components/AppFooter';
 import '../styles/index.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -18,9 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <div id="app" className="flex flex-col min-h-screen">
+        <AppHeader />
         <main id="main" className="flex flex-col grow">
           <Component {...pageProps} />
         </main>
+        <AppFooter />
       </div>
     </>
   );

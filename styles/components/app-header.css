@@ -1,0 +1,8 @@
+.app-header {
+  @apply flex items-center justify-between;
+  @apply px-6 py-10;
+}
+
+.app-header__logo {
+  @apply font-heading font-bold text-xl;
+}
