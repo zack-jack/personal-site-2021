@@ -1,0 +1,12 @@
+.brand-logos {
+  @apply flex flex-col w-full;
+}
+
+.brand-logos__logo-container {
+  @apply flex items-center justify-center;
+  @apply w-full h-10;
+}
+
+.brand-logos__logo {
+  @apply opacity-60;
+}

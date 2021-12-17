@@ -4,7 +4,10 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
+import SocialIconGithub from '../components/SocialIconGithub';
 
+// SSR Suspense is not yet supported but maybe soon-ish? :(
+const BrandLogos = dynamic(() => import('../components/BrandLogos'));
 const TechnologiesGrid = dynamic(
   () => import('../components/TechnologiesGrid')
 );
@@ -79,6 +82,23 @@ const Home: NextPage = (): ReactElement => {
             with, but I also enjoy Python and Go from time to time.
           </p>
         </div>
+      </section>
+      <section id="work" className="home-work">
+        <h3 className="home-work__heading">My work</h3>
+        <BrandLogos className="mt-16" />
+        <div className="c-hairline my-16" />
+        <Link href="https://github.com/zack-jack">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-work__github-link"
+          >
+            <SocialIconGithub width={56} />
+            <span className="home-work__github-link-text mt-2">
+              github.com/zack-jack
+            </span>
+          </a>
+        </Link>
       </section>
     </>
   );

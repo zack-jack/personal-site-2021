@@ -39,7 +39,7 @@
 }
 
 .home-skills__heading {
-  @apply font-bold text-center uppercase;
+  @apply font-bold text-center;
 }
 
 .home-skills__grid-wrapper {
@@ -49,4 +49,39 @@
 .home-skills__copy {
   @apply text-center;
   line-height: 2.2;
+}
+
+/* Work section */
+.home-work {
+  @apply flex flex-col items-center;
+  @apply px-6 py-20;
+  @apply bg-slate-900;
+  @apply text-slate-100;
+}
+
+.home-work__heading {
+  @apply font-bold text-center;
+}
+
+.home-work__subheading {
+  @apply font-medium text-center leading-relaxed;
+}
+
+.home-work__github-link {
+  @apply flex flex-col items-center;
+  @apply opacity-60;
+  @apply transition duration-150 ease-in-out;
+}
+
+.home-work__github-link .c-social-icon__path {
+  @apply fill-white;
+}
+
+.home-work__github-link:hover {
+  @apply opacity-100;
+  @apply fill-blue-100;
+}
+
+.home-work__github-link:hover .c-social-icon__path {
+  @apply fill-blue-100;
 }
