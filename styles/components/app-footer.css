@@ -1,2 +1,14 @@
 .app-footer {
+  @apply flex flex-col items-center;
+  @apply px-6 py-8;
+}
+
+.app-footer__social-wrapper {
+  @apply flex items-center;
+}
+
+.app-footer__made-with {
+  @apply flex items-center;
+  @apply mt-10;
+  @apply text-sm;
 }
