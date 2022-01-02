@@ -41,7 +41,7 @@ const TechnologiesGrid = (): ReactElement => {
         effect="solid"
         offset={{ bottom: 4 }}
         place="bottom"
-        className="font-body"
+        className="font-body font-semibold tracking-wide"
       />
     </div>
   );
