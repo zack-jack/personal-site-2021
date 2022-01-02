@@ -35,6 +35,7 @@
   @apply min-h-screen;
   @apply px-8 py-20;
   @apply bg-gray-100;
+  z-index: 1; /* required for bg and highlight z stacking */
 }
 
 .home-skills__grid-wrapper {

@@ -10,7 +10,7 @@
 
 .c-section-kicker {
   @apply ml-2;
-  @apply text-base uppercase font-normal;
+  @apply text-base uppercase font-normal tracking-widest;
 }
 
 .c-section-kicker__wrapper {

@@ -6,7 +6,6 @@ import { ArrowDownIcon } from '@heroicons/react/solid';
 import AppLink from '../components/AppLink';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
-import SocialIconGithub from '../components/SocialIconGithub';
 import SectionHeading from '../components/SectionHeading';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
@@ -52,7 +51,7 @@ const Home: NextPage = (): ReactElement => {
           heading={
             <>
               <span>{"Hi, I'm "}</span>
-              <span className="highlighted-tertiary">Zack</span>
+              <span className="highlighted-primary">Zack</span>
               <Emoji
                 label="hand waving emoji"
                 symbol={'\u{1F44B}'}
@@ -87,7 +86,7 @@ const Home: NextPage = (): ReactElement => {
       <section id="skills" className="home-skills">
         <SectionHeading
           kicker="Relevant Skills"
-          heading="Technologies I enjoy"
+          heading="Some of My Favorite Tools"
         />
         <div className="home-skills__grid-wrapper mt-10">
           <TechnologiesGrid />

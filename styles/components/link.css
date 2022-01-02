@@ -17,6 +17,7 @@
 
 .c-link--secondary::after {
   @apply bg-gradient-to-r from-secondary to-transparent;
+  @apply opacity-40;
 }
 
 .c-link--secondary:hover {
@@ -30,6 +31,7 @@
 
 .c-link--tertiary::after {
   @apply bg-gradient-to-r from-tertiary to-transparent;
+  @apply opacity-30;
 }
 
 .c-link--tertiary:hover {
@@ -40,7 +42,6 @@
 .c-link--secondary::after,
 .c-link--tertiary::after {
   @apply absolute inset-0 top-1/2;
-  @apply opacity-40;
   content: none;
   z-index: -1;
 }

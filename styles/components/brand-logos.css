@@ -2,18 +2,39 @@
   @apply flex flex-col w-full;
 }
 
-.brand-logos__logo-container {
+.brand-logos__logo-link {
+  @apply relative;
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-10;
-  @apply border border-solid border-gray-200 rounded;
+  @apply cursor-pointer;
+}
+
+.brand-logos__logo-link::after {
+  @apply absolute inset-0;
+  @apply border;
+  @apply opacity-60;
+  content: '';
+  border-width: 1px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    theme('colors.secondary'),
+    theme('colors.primary'),
+    theme('colors.quaternary'),
+    theme('colors.tertiary')
+  );
+}
+
+.brand-logos__logo-link:not(:first-child) {
+  @apply mt-8;
 }
 
 .brand-logos__logo {
-  @apply fill-gray-400;
+  @apply fill-gray-500;
   @apply transition duration-150 ease-in-out;
 }
 
-.brand-logos__logo-container:hover .brand-logos__logo {
-  @apply fill-gray-500;
+.brand-logos__logo-link:hover .brand-logos__logo {
+  @apply fill-gray-600;
 }

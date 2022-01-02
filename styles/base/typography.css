@@ -1,26 +1,35 @@
 .highlighted-primary,
 .highlighted-secondary,
-.highlighted-tertiary {
+.highlighted-tertiary,
+.highlighted-quaternary {
   @apply relative;
 }
 
 .highlighted-primary::after,
 .highlighted-secondary::after,
-.highlighted-tertiary::after {
+.highlighted-tertiary::after,
+.highlighted-quaternary::after {
   @apply absolute inset-0 top-1/2;
-  @apply opacity-40;
   content: '';
   z-index: -1;
 }
 
 .highlighted-primary::after {
   @apply bg-gradient-to-r from-primary to-transparent;
+  @apply opacity-30;
 }
 
 .highlighted-secondary::after {
   @apply bg-gradient-to-r from-secondary to-transparent;
+  @apply opacity-40;
 }
 
 .highlighted-tertiary::after {
   @apply bg-gradient-to-r from-tertiary to-transparent;
+  @apply opacity-30;
+}
+
+.highlighted-quaternary::after {
+  @apply bg-gradient-to-r from-quaternary to-transparent;
+  @apply opacity-30;
 }
