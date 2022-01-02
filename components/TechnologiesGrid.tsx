@@ -11,22 +11,38 @@ import IconWebpack from '../public/assets/images/_icon-webpack.svg';
 import IconNode from '../public/assets/images/_icon-node.svg';
 import IconJest from '../public/assets/images/_icon-jest.svg';
 import IconGit from '../public/assets/images/_icon-git.svg';
+import ReactTooltip from 'react-tooltip';
 
 const TechnologiesGrid = (): ReactElement => {
   return (
     <div className="technologies-grid">
-      <IconHtml className="technologies-grid__icon" />
-      <IconCss className="technologies-grid__icon" />
-      <IconJavascript className="technologies-grid__icon" />
-      <IconReact className="technologies-grid__icon" />
-      <IconVue className="technologies-grid__icon" />
-      <IconSvelte className="technologies-grid__icon" />
-      <IconTypescript className="technologies-grid__icon" />
-      <IconTailwindcss className="technologies-grid__icon" />
-      <IconWebpack className="technologies-grid__icon" />
-      <IconNode className="technologies-grid__icon" />
-      <IconJest className="technologies-grid__icon" />
-      <IconGit className="technologies-grid__icon" />
+      <IconHtml data-tip="HTML 5" className="technologies-grid__icon" />
+      <IconCss data-tip="CSS 3" className="technologies-grid__icon" />
+      <IconJavascript
+        data-tip="JavaScript"
+        className="technologies-grid__icon"
+      />
+      <IconReact data-tip="React" className="technologies-grid__icon" />
+      <IconVue data-tip="Vue" className="technologies-grid__icon" />
+      <IconSvelte data-tip="Svelte" className="technologies-grid__icon" />
+      <IconTypescript
+        data-tip="TypeScript"
+        className="technologies-grid__icon"
+      />
+      <IconTailwindcss
+        data-tip="Tailwind CSS"
+        className="technologies-grid__icon"
+      />
+      <IconWebpack data-tip="Webpack" className="technologies-grid__icon" />
+      <IconNode data-tip="Node JS" className="technologies-grid__icon" />
+      <IconJest data-tip="Jest" className="technologies-grid__icon" />
+      <IconGit data-tip="Git" className="technologies-grid__icon" />
+      <ReactTooltip
+        effect="solid"
+        offset={{ bottom: 4 }}
+        place="bottom"
+        className="font-body"
+      />
     </div>
   );
 };
