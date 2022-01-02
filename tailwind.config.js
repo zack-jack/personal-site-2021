@@ -12,6 +12,8 @@ module.exports = {
       'gray-700': theme('colors.gray.700'),
       'gray-800': theme('colors.gray.800'),
       primary: theme('colors.primary'),
+      secondary: theme('colors.secondary'),
+      tertiary: theme('colors.tertiary'),
     }),
     extend: {
       colors: {

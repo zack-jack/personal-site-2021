@@ -13,7 +13,7 @@
 
 .brand-logos__logo-link::after {
   @apply absolute inset-0;
-  @apply border border-solid border-gray-800;
+  @apply border border-solid border-gray-300;
   content: '';
 }
 
