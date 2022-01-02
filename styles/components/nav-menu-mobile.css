@@ -16,14 +16,20 @@
   @apply flex justify-end;
 }
 
-.c-nav-menu-mobile__link {
-  @apply p-6 pr-0;
-  @apply text-4xl text-gray-800;
-  @apply font-heading font-bold uppercase tracking-widest;
+.c-nav-menu-mobile__menu-item:not(:first-child) {
+  @apply mt-12;
 }
 
-.c-nav-menu-mobile__link:hover {
-  @apply text-primary;
+.c-nav-menu-mobile__menu-item:hover .c-nav-menu-mobile__link {
+  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
+  @apply text-transparent bg-clip-text;
+}
+
+.c-nav-menu-mobile__link {
+  @apply px-6;
+  @apply text-4xl text-gray-800;
+  @apply font-heading font-bold uppercase tracking-widest;
+  @apply transition duration-150 ease-in-out;
 }
 
 .c-nav-menu-mobile__socials {
