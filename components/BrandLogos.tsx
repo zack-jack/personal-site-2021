@@ -1,6 +1,10 @@
 import React, { ReactElement } from 'react';
 import classNames from 'classnames';
-import Image from 'next/image';
+import LogoRedVentures from '../public/assets/images/_logo-red-ventures.svg';
+import LogoMymove from '../public/assets/images/_logo-mymove.svg';
+import LogoUsps from '../public/assets/images/_logo-usps.svg';
+import LogoAllconnect from '../public/assets/images/_logo-allconnect.svg';
+import LogoCnet from '../public/assets/images/_logo-cnet.svg';
 
 interface BrandLogosProps {
   className?: string;
@@ -10,54 +14,23 @@ const BrandLogos = ({ className = '' }: BrandLogosProps): ReactElement => {
   return (
     <div className={classNames('brand-logos', { [`${className}`]: className })}>
       <div className="brand-logos__logo-container">
-        <Image
-          src="/assets/images/_logo-red-ventures.svg"
-          alt="Red Ventures"
-          title="Red Ventures"
-          width={215}
-          height={28}
+        <LogoRedVentures
+          width={272}
+          height={36}
           className="brand-logos__logo"
         />
       </div>
       <div className="brand-logos__logo-container mt-8 md:mt-12">
-        <Image
-          src="/assets/images/_logo-mymove.svg"
-          alt="MYMOVE"
-          title="MYMOVE"
-          width={172}
-          height={40}
-          className="brand-logos__logo"
-        />
+        <LogoMymove width={172} height={40} className="brand-logos__logo" />
       </div>
       <div className="brand-logos__logo-container mt-8 md:mt-12">
-        <Image
-          src="/assets/images/_logo-usps.svg"
-          alt="USPS"
-          title="USPS"
-          width={199}
-          height={24}
-          className="brand-logos__logo"
-        />
+        <LogoUsps className="brand-logos__logo" width={199} height={24} />
       </div>
       <div className="brand-logos__logo-container mt-8 md:mt-12">
-        <Image
-          src="/assets/images/_logo-allconnect.svg"
-          alt="Allconnect"
-          title="Allconnect"
-          width={205}
-          height={40}
-          className="brand-logos__logo"
-        />
+        <LogoAllconnect width={205} height={40} className="brand-logos__logo" />
       </div>
       <div className="brand-logos__logo-container mt-8 md:mt-12">
-        <Image
-          src="/assets/images/_logo-cnet.svg"
-          alt="CNET"
-          title="CNET"
-          width={55}
-          height={40}
-          className="brand-logos__logo"
-        />
+        <LogoCnet width={55} height={40} className="brand-logos__logo" />
       </div>
     </div>
   );

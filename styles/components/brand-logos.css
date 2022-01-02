@@ -8,5 +8,5 @@
 }
 
 .brand-logos__logo {
-  @apply opacity-60;
+  @apply fill-slate-200;
 }

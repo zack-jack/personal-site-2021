@@ -1,93 +1,32 @@
 import React, { ReactElement } from 'react';
-import Image from 'next/image';
+import IconHtml from '../public/assets/images/_icon-html.svg';
+import IconCss from '../public/assets/images/_icon-css.svg';
+import IconJavascript from '../public/assets/images/_icon-javascript.svg';
+import IconReact from '../public/assets/images/_icon-react.svg';
+import IconVue from '../public/assets/images/_icon-vue.svg';
+import IconSvelte from '../public/assets/images/_icon-svelte.svg';
+import IconTypescript from '../public/assets/images/_icon-typescript.svg';
+import IconTailwindcss from '../public/assets/images/_icon-tailwindcss.svg';
+import IconWebpack from '../public/assets/images/_icon-webpack.svg';
+import IconNode from '../public/assets/images/_icon-node.svg';
+import IconJest from '../public/assets/images/_icon-jest.svg';
+import IconGit from '../public/assets/images/_icon-git.svg';
 
 const TechnologiesGrid = (): ReactElement => {
   return (
     <div className="technologies-grid">
-      <Image
-        src="/assets/images/_icon-html.svg"
-        alt="HTML 5"
-        title="HTML 5"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-css.svg"
-        alt="CSS 3"
-        title="CSS 3"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-javascript.svg"
-        alt="JavaScript"
-        title="JavaScript"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-react.svg"
-        alt="React"
-        title="React"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-vue.svg"
-        alt="Vue"
-        title="Vue"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-svelte.svg"
-        alt="Svelte"
-        title="Svelte"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-typescript.svg"
-        alt="TypeScript"
-        title="TypeScript"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-tailwindcss.svg"
-        alt="Tailwind CSS"
-        title="Tailwind CSS"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-webpack.svg"
-        alt="Webpack"
-        title="Webpack"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-node.svg"
-        alt="Node"
-        title="Node"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-jest.svg"
-        alt="Jest"
-        title="Jest"
-        width={64}
-        height={64}
-      />
-      <Image
-        src="/assets/images/_icon-git.svg"
-        alt="Git"
-        title="Git"
-        width={64}
-        height={64}
-      />
+      <IconHtml className="technologies-grid__icon" />
+      <IconCss className="technologies-grid__icon" />
+      <IconJavascript className="technologies-grid__icon" />
+      <IconReact className="technologies-grid__icon" />
+      <IconVue className="technologies-grid__icon" />
+      <IconSvelte className="technologies-grid__icon" />
+      <IconTypescript className="technologies-grid__icon" />
+      <IconTailwindcss className="technologies-grid__icon" />
+      <IconWebpack className="technologies-grid__icon" />
+      <IconNode className="technologies-grid__icon" />
+      <IconJest className="technologies-grid__icon" />
+      <IconGit className="technologies-grid__icon" />
     </div>
   );
 };

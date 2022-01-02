@@ -59,7 +59,7 @@
   @apply min-h-screen;
   @apply px-6 py-20;
   @apply bg-neutral-900;
-  @apply text-slate-100;
+  @apply text-slate-200;
   scroll-margin-top: -1px;
 }
 
@@ -73,16 +73,14 @@
 
 .home-work__github-link {
   @apply flex flex-col items-center;
-  @apply opacity-60;
   @apply transition duration-150 ease-in-out;
 }
 
 .home-work__github-link .c-social-icon__path {
-  @apply fill-white;
+  @apply fill-slate-200;
 }
 
 .home-work__github-link:hover {
-  @apply opacity-100;
   @apply fill-primary;
 }
 

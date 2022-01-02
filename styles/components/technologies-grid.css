@@ -13,3 +13,7 @@
     width: calc((64px * 3) + (80px * 2));
   }
 }
+
+.technologies-grid__icon {
+  @apply w-16 h-16 fill-neutral-900;
+}

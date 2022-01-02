@@ -1,14 +1,15 @@
 const { colors } = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  darkMode: false,
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     fill: (theme) => ({
-      white: theme('colors.white'),
       'neutral-900': theme('colors.neutral.900'),
+      'slate-200': theme('colors.slate.200'),
       primary: theme('colors.primary'),
     }),
     extend: {
