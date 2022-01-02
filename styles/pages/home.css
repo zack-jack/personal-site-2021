@@ -18,6 +18,25 @@
   @apply flex flex-col items-center justify-center;
 }
 
+.home-intro__scroll-link {
+  @apply p-4;
+  @apply bg-transparent rounded-full;
+  @apply transition duration-150 ease-in-out;
+}
+
+.home-intro__scroll-link:hover {
+  @apply bg-gradient-to-br from-secondary via-primary to-quaternary;
+}
+
+.home-intro__scroll-link:hover .home-intro__scroll-link-icon {
+  @apply text-white;
+}
+
+.home-intro__scroll-link-icon {
+  @apply w-8 h-8;
+  @apply transition duration-150 ease-in-out;
+}
+
 /* About section */
 .home-about {
   @apply flex flex-col items-center justify-center;

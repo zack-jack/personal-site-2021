@@ -9,16 +9,6 @@
   @apply transition duration-150 ease-in-out;
 }
 
-.c-btn--circle {
-  @apply p-6;
-  @apply bg-primary;
-  @apply rounded-full;
-  @apply text-white font-semibold;
-  @apply shadow;
-  @apply transition duration-150 ease-in-out;
-}
-
-.c-btn:hover,
-.c-btn--circle:hover {
+.c-btn:hover {
   @apply brightness-125;
 }
