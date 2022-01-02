@@ -13,6 +13,6 @@
 
 .c-hamburger__bar {
   @apply h-1;
-  @apply bg-neutral-900;
+  @apply bg-gray-800;
   @apply rounded-sm;
 }

@@ -1,7 +1,7 @@
 /* Intro section */
 .home-intro {
   @apply flex flex-col grow justify-between;
-  @apply px-6 pb-10;
+  @apply px-8 pb-10;
   @apply text-center;
   height: calc(100vh - 112px); /* height minus header */
 }
@@ -22,68 +22,29 @@
 .home-about {
   @apply flex flex-col items-center justify-center;
   @apply min-h-screen;
-  @apply px-6 py-32;
-}
-
-.home-about__heading {
-  @apply text-center;
+  @apply px-8 py-32;
 }
 
 .home-about__copy {
-  @apply text-center;
   line-height: 2.2;
 }
 
 /* Skills section */
 .home-skills {
-  @apply px-6 py-20;
-  @apply bg-slate-100;
-}
-
-.home-skills__heading {
-  @apply font-bold text-center;
+  @apply flex flex-col items-center;
+  @apply min-h-screen;
+  @apply px-8 py-20;
+  @apply bg-gray-100;
 }
 
 .home-skills__grid-wrapper {
-  @apply flex justify-center items-center;
-}
-
-.home-skills__copy {
-  @apply text-center;
-  line-height: 2.2;
+  @apply flex grow justify-center items-center;
 }
 
 /* Work section */
 .home-work {
   @apply flex flex-col items-center;
   @apply min-h-screen;
-  @apply px-6 py-20;
-  @apply bg-neutral-900;
-  @apply text-slate-200;
+  @apply px-8 py-20;
   scroll-margin-top: -1px;
-}
-
-.home-work__heading {
-  @apply font-bold text-center;
-}
-
-.home-work__subheading {
-  @apply font-medium text-center leading-relaxed;
-}
-
-.home-work__github-link {
-  @apply flex flex-col items-center;
-  @apply transition duration-150 ease-in-out;
-}
-
-.home-work__github-link .c-social-icon__path {
-  @apply fill-slate-200;
-}
-
-.home-work__github-link:hover {
-  @apply fill-primary;
-}
-
-.home-work__github-link:hover .c-social-icon__path {
-  @apply fill-primary;
 }

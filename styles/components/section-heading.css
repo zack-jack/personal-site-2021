@@ -1,0 +1,29 @@
+.c-section-heading__wrapper {
+  @apply flex flex-col items-center;
+  @apply w-full;
+}
+
+.c-section-heading {
+  @apply w-full;
+  @apply text-2xl tracking-wider;
+}
+
+.c-section-kicker {
+  @apply ml-2;
+  @apply text-base uppercase font-normal;
+}
+
+.c-section-kicker__wrapper {
+  @apply flex items-center;
+  @apply w-full;
+}
+
+.c-section-kicker__line {
+  @apply w-10;
+  @apply bg-gray-800;
+  height: 2px;
+}
+
+.c-section-kicker__wrapper + .c-section-heading {
+  @apply mt-4;
+}

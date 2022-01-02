@@ -1,5 +1,3 @@
-const { colors } = require('tailwindcss/defaultTheme');
-
 module.exports = {
   darkMode: false,
   content: [
@@ -8,8 +6,10 @@ module.exports = {
   ],
   theme: {
     fill: (theme) => ({
-      'neutral-900': theme('colors.neutral.900'),
-      'slate-200': theme('colors.slate.200'),
+      'gray-400': theme('colors.gray.400'),
+      'gray-500': theme('colors.gray.500'),
+      'gray-700': theme('colors.gray.700'),
+      'gray-800': theme('colors.gray.800'),
       primary: theme('colors.primary'),
     }),
     extend: {
@@ -17,13 +17,9 @@ module.exports = {
         transparent: 'transparent',
         black: '#000',
         white: '#FFF',
-        neutral: {
-          ...colors.neutral,
-          850: '#212121',
-        },
-        primary: '#0045FA',
-        secondary: '#01B3F9',
-        tertiary: '#f43f5e',
+        primary: '#4361EE',
+        secondary: '#4CC9F0',
+        tertiary: '#F72585',
       },
       fontFamily: {
         heading: ['Poppins, Helvetica, Arial, sans-serif'],

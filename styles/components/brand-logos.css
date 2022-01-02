@@ -4,9 +4,16 @@
 
 .brand-logos__logo-container {
   @apply flex items-center justify-center;
-  @apply w-full h-10;
+  @apply w-full;
+  @apply px-6 py-10;
+  @apply border border-solid border-gray-200 rounded;
 }
 
 .brand-logos__logo {
-  @apply fill-slate-200;
+  @apply fill-gray-400;
+  @apply transition duration-150 ease-in-out;
+}
+
+.brand-logos__logo-container:hover .brand-logos__logo {
+  @apply fill-gray-500;
 }

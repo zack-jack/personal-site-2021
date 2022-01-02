@@ -1,10 +1,10 @@
 .technologies-grid {
-  @apply flex flex-wrap px-6;
+  @apply flex flex-wrap;
   gap: calc(50% - 96px);
   row-gap: 40px;
 
   @media screen(sm) {
-    @apply gap-14 px-0;
+    @apply gap-14;
     width: calc((64px * 3) + (56px * 2));
   }
 
@@ -15,5 +15,5 @@
 }
 
 .technologies-grid__icon {
-  @apply w-16 h-16 fill-neutral-900;
+  @apply w-16 h-16 fill-gray-700;
 }

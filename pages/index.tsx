@@ -7,6 +7,7 @@ import AppLink from '../components/AppLink';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
 import SocialIconGithub from '../components/SocialIconGithub';
+import SectionHeading from '../components/SectionHeading';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
 const BrandLogos = dynamic(() => import('../components/BrandLogos'));
@@ -46,24 +47,29 @@ const Home: NextPage = (): ReactElement => {
         </div>
       </section>
       <section id="about" className="home-about">
-        <h3 className="home-about__heading">
-          <span>{"Hi, I'm "}</span>
-          <span className="text-primary">Zack</span>
-          <Emoji
-            label="hand waving emoji"
-            symbol={'\u{1F44B}'}
-            className="ml-2"
-          />
-        </h3>
+        <SectionHeading
+          kicker="About me"
+          heading={
+            <>
+              <span>{"Hi, I'm "}</span>
+              <span className="highlighted-tertiary">Zack</span>
+              <Emoji
+                label="hand waving emoji"
+                symbol={'\u{1F44B}'}
+                className="ml-2"
+              />
+            </>
+          }
+        />
         <div className="home-about__copy mt-10">
           <p>
             {
-              "I'm a web developer who enjoys building user experiences that are both enjoyable and accessible."
+              "I'm a web developer who enjoys building enjoyable and accessible user experiences."
             }
           </p>
           <p className="mt-8">
-            While I do curiously dabble in different parts of the tech stack, my
-            specialty is in the front end.
+            My specialty is in front end development, but I do enjoy building
+            APIs and exploring new technologies from time to time.
           </p>
           <p className="mt-8">
             {'You can find a full list of my relevant'}{' '}
@@ -79,36 +85,17 @@ const Home: NextPage = (): ReactElement => {
         </div>
       </section>
       <section id="skills" className="home-skills">
-        <h3 className="home-skills__heading">Technologies</h3>
-        <div className="home-skills__grid-wrapper mt-16">
+        <SectionHeading
+          kicker="Relevant Skills"
+          heading="Technologies I enjoy"
+        />
+        <div className="home-skills__grid-wrapper mt-10">
           <TechnologiesGrid />
-        </div>
-        <div className="home-skills__copy mt-16">
-          <p>
-            Above are some of my favorite tools to utilize for web development.
-          </p>
-          <p className="mt-8">
-            JavaScript / TypeScript is the language that I am most proficient
-            with, but I also enjoy Python and Go from time to time.
-          </p>
         </div>
       </section>
       <section id="work" className="home-work">
-        <h3 className="home-work__heading">My work</h3>
-        <BrandLogos className="mt-16" />
-        <div className="c-hairline my-16" />
-        <Link href="https://github.com/zack-jack">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="home-work__github-link"
-          >
-            <SocialIconGithub width={56} />
-            <span className="home-work__github-link-text mt-2">
-              github.com/zack-jack
-            </span>
-          </a>
-        </Link>
+        <SectionHeading kicker="My Work" heading="Brands I've Worked With" />
+        <BrandLogos className="mt-10" />
       </section>
     </>
   );

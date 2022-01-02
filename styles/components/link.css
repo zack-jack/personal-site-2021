@@ -2,7 +2,7 @@
   @apply relative;
   @apply inline-flex items-center;
   @apply border-b border-solid border-primary;
-  @apply text-neutral-900 font-semibold leading-normal;
+  @apply text-gray-800 font-semibold leading-normal;
   @apply transition duration-150 ease-in-out;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .c-link--secondary:hover {
-  @apply text-neutral-900;
+  @apply text-gray-800;
   @apply border-secondary;
 }
 
@@ -33,14 +33,14 @@
 }
 
 .c-link--tertiary:hover {
-  @apply text-neutral-900;
+  @apply text-gray-800;
   @apply border-tertiary;
 }
 
 .c-link--secondary::after,
 .c-link--tertiary::after {
   @apply absolute inset-0 top-1/2;
-  @apply opacity-30;
+  @apply opacity-40;
   content: none;
   z-index: -1;
 }
