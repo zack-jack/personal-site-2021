@@ -1,4 +1,4 @@
 body {
   @apply font-body font-normal;
-  @apply text-base text-slate-800;
+  @apply text-base text-neutral-900;
 }

@@ -1,13 +1,13 @@
 /* Intro section */
 .home-intro {
   @apply flex flex-col grow justify-between;
-  @apply px-6 pb-20;
+  @apply px-6 pb-10;
   @apply text-center;
   height: calc(100vh - 112px); /* height minus header */
 }
 
 .home-intro__heading-wrapper {
-  @apply flex flex-col grow justify-center;
+  @apply flex flex-col grow items-center justify-center;
 }
 
 .home-intro__subheading {
@@ -20,6 +20,8 @@
 
 /* About section */
 .home-about {
+  @apply flex flex-col items-center justify-center;
+  @apply min-h-screen;
   @apply px-6 py-32;
 }
 
@@ -54,9 +56,11 @@
 /* Work section */
 .home-work {
   @apply flex flex-col items-center;
+  @apply min-h-screen;
   @apply px-6 py-20;
-  @apply bg-slate-900;
+  @apply bg-neutral-900;
   @apply text-slate-100;
+  scroll-margin-top: -1px;
 }
 
 .home-work__heading {
@@ -79,9 +83,9 @@
 
 .home-work__github-link:hover {
   @apply opacity-100;
-  @apply fill-blue-100;
+  @apply fill-primary;
 }
 
 .home-work__github-link:hover .c-social-icon__path {
-  @apply fill-blue-100;
+  @apply fill-primary;
 }

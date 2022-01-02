@@ -1,8 +1,8 @@
 .c-social-icon__path {
-  @apply fill-slate-800;
+  @apply fill-neutral-900;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-social-icon:hover .c-social-icon__path {
-  @apply fill-blue-200;
+  @apply fill-primary;
 }

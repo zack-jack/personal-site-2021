@@ -8,27 +8,21 @@ module.exports = {
   theme: {
     fill: (theme) => ({
       white: theme('colors.white'),
-      'slate-800': theme('colors.slate.800'),
-      'blue-100': theme('colors.blue.100'),
-      'blue-200': theme('colors.blue.200'),
+      'neutral-900': theme('colors.neutral.900'),
+      primary: theme('colors.primary'),
     }),
     extend: {
       colors: {
         transparent: 'transparent',
         black: '#000',
         white: '#FFF',
-        blue: {
-          ...colors.blue,
-          100: '#4F3DFF',
-          200: '#3824ff',
+        neutral: {
+          ...colors.neutral,
+          850: '#212121',
         },
-        violet: {
-          ...colors.violet,
-          100: '#9FA5F6',
-          200: '#65669F',
-          300: '#484764',
-          400: '#0C0A1F',
-        },
+        primary: '#0045FA',
+        secondary: '#01B3F9',
+        tertiary: '#f43f5e',
       },
       fontFamily: {
         heading: ['Poppins, Helvetica, Arial, sans-serif'],

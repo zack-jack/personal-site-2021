@@ -1,25 +1,24 @@
 .c-btn {
   @apply flex items-center justify-center;
   @apply w-full;
-  @apply px-6 py-4;
-  @apply bg-blue-100;
-  @apply border border-solid border-blue-100 rounded-full;
-  @apply text-lg text-white font-bold tracking-wide whitespace-nowrap;
-  @apply shadow-md;
+  @apply px-6 py-3;
+  @apply bg-primary;
+  @apply border border-solid border-primary rounded;
+  @apply text-white font-semibold whitespace-nowrap;
+  @apply shadow;
   @apply transition duration-150 ease-in-out;
 }
 
-.c-btn:hover {
-  @apply bg-blue-200;
-  @apply shadow-lg;
+.c-btn--circle {
+  @apply p-6;
+  @apply bg-primary;
+  @apply rounded-full;
+  @apply text-white font-semibold;
+  @apply shadow;
+  @apply transition duration-150 ease-in-out;
 }
 
-.c-btn--secondary {
-  @apply bg-white;
-  @apply border-white;
-  @apply text-slate-800;
-}
-
-.c-btn--secondary:hover {
-  @apply bg-white;
+.c-btn:hover,
+.c-btn--circle:hover {
+  @apply brightness-125;
 }

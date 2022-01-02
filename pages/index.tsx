@@ -2,6 +2,8 @@ import React, { ReactElement } from 'react';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { ArrowDownIcon } from '@heroicons/react/solid';
+import AppLink from '../components/AppLink';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
 import SocialIconGithub from '../components/SocialIconGithub';
@@ -19,26 +21,34 @@ const Home: NextPage = (): ReactElement => {
         <BgQuadrants />
         <div className="home-intro__heading-wrapper">
           <h1>
-            Front End
+            <span className="highlighted-secondary">Front End</span>
             <br /> Web Developer
           </h1>
           <h2 className="home-intro__subheading mt-6">
             Based out of Charlotte, NC
           </h2>
+          <AppLink
+            arrow="top-right"
+            color="tertiary"
+            href="#"
+            className="mt-10"
+          >
+            R&eacute;sum&eacute;
+          </AppLink>
         </div>
-        <div className="home-intro__actions mt-6">
+        <div className="home-intro__actions">
           <Link href="#about">
-            <a className="c-btn">Learn More</a>
-          </Link>
-          <Link href="#">
-            <a className="c-btn c-btn--secondary mt-6">R&eacute;sum&eacute;</a>
+            <a className="c-btn--circle mt-6">
+              <ArrowDownIcon className="w-6 h-6 text-white not-sr-only" />
+              <span className="sr-only">About me</span>
+            </a>
           </Link>
         </div>
       </section>
       <section id="about" className="home-about">
         <h3 className="home-about__heading">
           <span>{"Hi, I'm "}</span>
-          <span className="text-blue-100">Zack</span>
+          <span className="text-primary">Zack</span>
           <Emoji
             label="hand waving emoji"
             symbol={'\u{1F44B}'}
@@ -57,13 +67,13 @@ const Home: NextPage = (): ReactElement => {
           </p>
           <p className="mt-8">
             {'You can find a full list of my relevant'}{' '}
-            <Link href="#skills">
-              <a className="c-link">skills</a>
-            </Link>{' '}
+            <AppLink href="#skills" color="secondary">
+              skills
+            </AppLink>{' '}
             {'and some of the'}{' '}
-            <Link href="#work">
-              <a className="c-link">{"brands I've worked with"}</a>
-            </Link>{' '}
+            <AppLink href="#work" color="tertiary">
+              {"brands I've worked with"}
+            </AppLink>{' '}
             {'in the sections below.'}
           </p>
         </div>

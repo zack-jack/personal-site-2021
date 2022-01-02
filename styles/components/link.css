@@ -1,10 +1,51 @@
 .c-link {
-  @apply border-b border-solid border-blue-100;
-  @apply text-slate-800 font-semibold;
+  @apply relative;
+  @apply inline-flex items-center;
+  @apply border-b border-solid border-primary;
+  @apply text-neutral-900 font-semibold leading-normal;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-link:hover {
-  @apply border-none;
-  @apply text-blue-100;
+  @apply border-transparent;
+  @apply text-primary;
+}
+
+.c-link--secondary {
+  @apply border-secondary;
+}
+
+.c-link--secondary::after {
+  @apply bg-gradient-to-r from-secondary to-transparent;
+}
+
+.c-link--secondary:hover {
+  @apply text-neutral-900;
+  @apply border-secondary;
+}
+
+.c-link--tertiary {
+  @apply border-tertiary;
+}
+
+.c-link--tertiary::after {
+  @apply bg-gradient-to-r from-tertiary to-transparent;
+}
+
+.c-link--tertiary:hover {
+  @apply text-neutral-900;
+  @apply border-tertiary;
+}
+
+.c-link--secondary::after,
+.c-link--tertiary::after {
+  @apply absolute inset-0 top-1/2;
+  @apply opacity-30;
+  content: none;
+  z-index: -1;
+}
+
+.c-link--secondary:hover.c-link--secondary::after,
+.c-link--tertiary:hover.c-link--tertiary::after {
+  content: '';
 }

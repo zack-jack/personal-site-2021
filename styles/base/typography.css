@@ -1,0 +1,26 @@
+.highlighted-primary,
+.highlighted-secondary,
+.highlighted-tertiary {
+  @apply relative;
+}
+
+.highlighted-primary::after,
+.highlighted-secondary::after,
+.highlighted-tertiary::after {
+  @apply absolute inset-0 top-1/2;
+  @apply opacity-30;
+  content: '';
+  z-index: -1;
+}
+
+.highlighted-primary::after {
+  @apply bg-gradient-to-r from-primary to-transparent;
+}
+
+.highlighted-secondary::after {
+  @apply bg-gradient-to-r from-secondary to-transparent;
+}
+
+.highlighted-tertiary::after {
+  @apply bg-gradient-to-r from-tertiary to-transparent;
+}
