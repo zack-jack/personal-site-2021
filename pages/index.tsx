@@ -7,6 +7,7 @@ import AppLink from '../components/AppLink';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
 import SectionHeading from '../components/SectionHeading';
+import ContactForm from '../components/ContactForm';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
 const BrandLogos = dynamic(() => import('../components/BrandLogos'));
@@ -89,6 +90,10 @@ const Home: NextPage = (): ReactElement => (
     <section id="work" className="home-work">
       <SectionHeading kicker="My Work" heading="Brands I've Worked With" />
       <BrandLogos className="mt-10" />
+    </section>
+    <section id="contact" className="home-contact">
+      <SectionHeading kicker="Let's Talk" heading="Contact Me" />
+      <ContactForm className="mt-10" />
     </section>
   </>
 );

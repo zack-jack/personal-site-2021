@@ -1,0 +1,28 @@
+.c-input-wrapper {
+  @apply flex flex-col;
+}
+
+.c-input-label {
+  @apply text-sm text-gray-800;
+}
+
+.c-input-field {
+  @apply p-3;
+  @apply bg-gray-100;
+  @apply border-b border-gray-400;
+  @apply text-gray-800 leading-relaxed;
+  @apply transition duration-150 ease-in-out;
+}
+
+.c-input-field::placeholder {
+  @apply text-gray-400;
+}
+
+.c-input-field--error {
+  @apply border-b-2 border-error;
+}
+
+.c-input-error {
+  @apply ml-2;
+  @apply text-sm text-error font-medium;
+}

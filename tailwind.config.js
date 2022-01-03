@@ -24,6 +24,7 @@ module.exports = {
         secondary: '#4CC9F0',
         tertiary: '#F72585',
         quaternary: '#3A0CA3',
+        error: '#EF4444',
       },
       fontFamily: {
         heading: ['Poppins, Helvetica, Arial, sans-serif'],

@@ -2,13 +2,12 @@
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-3;
-  @apply bg-primary;
-  @apply border border-solid border-primary rounded;
+  @apply bg-gray-800;
   @apply text-white font-semibold whitespace-nowrap;
   @apply shadow;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-btn:hover {
-  @apply brightness-125;
+  @apply bg-gradient-to-br from-secondary via-primary to-quaternary;
 }

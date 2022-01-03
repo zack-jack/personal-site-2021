@@ -1,10 +1,24 @@
+import React, { useEffect } from 'react';
 import type { AppProps } from 'next/app';
+import { Globals } from 'react-spring';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import Head from 'next/head';
 import AppHeader from '../components/AppHeader';
 import AppFooter from '../components/AppFooter';
+import useReducedMotion from '../hooks/useReducedMotion';
 import '../styles/index.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const queryClient = new QueryClient();
+
+function App({ Component, pageProps }: AppProps) {
+  const prefersReducedMotion = useReducedMotion();
+
+  useEffect(() => {
+    Globals.assign({
+      skipAnimation: prefersReducedMotion,
+    });
+  }, [prefersReducedMotion]);
+
   return (
     <>
       <Head>
@@ -24,13 +38,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         className="relative flex flex-col min-h-screen overflow-hidden"
       >
         <AppHeader />
-        <main id="main" className="flex flex-col grow">
-          <Component {...pageProps} />
-        </main>
+        <QueryClientProvider client={queryClient}>
+          <main id="main" className="flex flex-col grow">
+            <Component {...pageProps} />
+          </main>
+        </QueryClientProvider>
         <AppFooter />
       </div>
     </>
   );
 }
 
-export default MyApp;
+export default App;

@@ -1,0 +1,4 @@
+.c-input-textarea__field {
+  @apply resize-none;
+  height: 200px;
+}

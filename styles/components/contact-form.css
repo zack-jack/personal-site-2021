@@ -1,0 +1,13 @@
+.contact-form {
+  @apply flex flex-col;
+  @apply w-full;
+}
+
+.contact-form__success,
+.contact-form__api-error {
+  @apply font-medium text-center;
+}
+
+.contact-form__api-error {
+  @apply text-red-500;
+}
