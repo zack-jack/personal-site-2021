@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import Link from 'next/link';
-import Emoji from './Emoji';
+import { HeartIcon } from '@heroicons/react/solid';
 import SocialIconGithub from './SocialIconGithub';
 import SocialIconLinkedIn from './SocialIconLinkedIn';
 
@@ -22,9 +22,9 @@ const AppFooter = (): ReactElement => {
         </Link>
       </div>
       <div className="app-footer__made-with">
-        <span>Made with</span>
-        <Emoji label="heart emoji" symbol={'\u{1F5A4}'} className="ml-1" />
-        <span className="ml-2">in Charlotte, NC.</span>
+        Made with
+        <HeartIcon className="app-footer__made-with-icon" />
+        in Charlotte, NC.
       </div>
     </footer>
   );

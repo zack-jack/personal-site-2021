@@ -94,12 +94,17 @@ const NavMenuMobile = (): ReactElement => {
             </ul>
           </nav>
           <animated.ul
+            aria-hidden={!isMenuOpen}
             className="c-nav-menu-mobile__socials"
             style={socialIconsSpringStyles}
           >
             <li>
               <Link href="https://github.com/zack-jack">
-                <a target="_blank" rel="noopener noreferrer">
+                <a
+                  tabIndex={!isMenuOpen ? -1 : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIconGithub />
                   <span className="sr-only">Github</span>
                 </a>
@@ -107,7 +112,11 @@ const NavMenuMobile = (): ReactElement => {
             </li>
             <li className="ml-10">
               <Link href="https://www.linkedin.com/in/zack-jackson/">
-                <a target="_blank" rel="noopener noreferrer">
+                <a
+                  tabIndex={!isMenuOpen ? -1 : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIconLinkedIn />
                   <span className="sr-only">LinkedIn</span>
                 </a>

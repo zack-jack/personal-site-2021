@@ -1,6 +1,7 @@
 .c-hamburger {
   @apply relative block;
-  @apply w-8 h-6;
+  @apply w-10 h-9;
+  @apply p-1;
   @apply cursor-pointer z-50;
   @apply md:hidden;
 }
@@ -8,7 +9,7 @@
 .c-hamburger__bars {
   @apply absolute;
   @apply w-8 h-full;
-  top: 6px; /* 1.5 height of bar */
+  top: 12px;
 }
 
 .c-hamburger__bar {

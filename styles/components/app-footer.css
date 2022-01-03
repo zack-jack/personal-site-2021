@@ -12,3 +12,8 @@
   @apply mt-10;
   @apply text-sm;
 }
+
+.app-footer__made-with-icon {
+  @apply w-5 h-5;
+  margin: 0 2px;
+}

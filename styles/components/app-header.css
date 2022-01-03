@@ -10,5 +10,6 @@
 }
 
 .app-header__logo:hover {
-  @apply text-primary;
+  @apply bg-gradient-to-br from-secondary via-primary to-quaternary;
+  @apply text-transparent bg-clip-text;
 }
