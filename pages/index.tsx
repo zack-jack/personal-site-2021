@@ -80,7 +80,7 @@ const Home: NextPage = (): ReactElement => (
           heading="Some of My Favorite Developer Tools"
         />
       </div>
-      <div className="home-skills__grid-wrapper mt-10">
+      <div className="home-skills__content mt-10">
         <TechnologiesGrid />
       </div>
     </section>

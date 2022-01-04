@@ -3,3 +3,13 @@
   gap: calc(50% - 96px);
   row-gap: 40px;
 }
+
+.technologies-grid__wrapper {
+  @apply flex flex-col;
+  @apply px-8 py-12;
+}
+
+.technologies-grid__icon {
+  @apply w-16 h-16;
+  @apply fill-gray-800;
+}

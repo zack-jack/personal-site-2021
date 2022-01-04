@@ -11,6 +11,7 @@ module.exports = {
       'gray-600': theme('colors.gray.600'),
       'gray-700': theme('colors.gray.700'),
       'gray-800': theme('colors.gray.800'),
+      'gray-900': theme('colors.gray.900'),
       primary: theme('colors.primary'),
       secondary: theme('colors.secondary'),
       tertiary: theme('colors.tertiary'),

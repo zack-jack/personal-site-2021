@@ -42,11 +42,9 @@
   @apply px-8;
 }
 
-.home-skills__grid-wrapper {
+.home-skills__content {
   @apply flex grow;
   @apply w-full;
-  @apply px-8 py-12;
-  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
 }
 
 /* Work section */

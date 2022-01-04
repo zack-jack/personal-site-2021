@@ -8,6 +8,10 @@
   @apply text-2xl tracking-wide;
 }
 
+.c-section-heading--on-dark-bg {
+  @apply text-white;
+}
+
 .c-section-kicker {
   @apply ml-2;
   @apply text-base uppercase font-normal tracking-widest;
