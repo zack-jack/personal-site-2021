@@ -5,7 +5,7 @@
 
 .c-section-heading {
   @apply w-full;
-  @apply text-2xl tracking-wider;
+  @apply text-2xl tracking-wide;
 }
 
 .c-section-kicker {
@@ -20,7 +20,7 @@
 
 .c-section-kicker__line {
   @apply w-10;
-  @apply bg-gray-800;
+  @apply bg-gradient-to-r from-secondary via-primary to-tertiary;
   height: 2px;
 }
 

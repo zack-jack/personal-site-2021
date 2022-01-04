@@ -8,8 +8,8 @@
 
 .c-input-field {
   @apply p-3;
-  @apply bg-gray-100;
-  @apply border-b border-gray-400;
+  @apply bg-gray-50;
+  @apply border-b border-gray-500;
   @apply text-gray-800 leading-relaxed;
   @apply transition duration-150 ease-in-out;
 }

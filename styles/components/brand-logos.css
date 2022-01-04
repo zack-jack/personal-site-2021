@@ -7,18 +7,18 @@
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-10;
+  @apply border border-solid border-gray-300;
+  @apply rounded;
   @apply cursor-pointer;
   @apply transition duration-150 ease-in-out;
 }
 
-.brand-logos__logo-link::after {
-  @apply absolute inset-0;
-  @apply border border-solid border-gray-300;
-  content: '';
-}
-
 .brand-logos__logo-link:not(:first-child) {
   @apply mt-8;
+}
+
+.brand-logos__logo-link:hover {
+  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
 }
 
 .brand-logos__logo {
@@ -26,18 +26,8 @@
   @apply transition duration-150 ease-in-out;
 }
 
-.brand-logos__logo-link:hover {
-  @apply bg-gradient-to-br from-secondary via-primary to-quaternary;
-}
-
 .brand-logos__logo-link:hover.brand-logos__logo-link::after {
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to bottom right,
-    theme('colors.secondary'),
-    theme('colors.primary'),
-    theme('colors.quaternary')
-  );
+  @apply border-transparent rounded;
 }
 
 .brand-logos__logo-link:hover .brand-logos__logo {

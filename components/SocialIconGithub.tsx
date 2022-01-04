@@ -28,7 +28,7 @@ const SocialIconGithub = ({
           >
             <stop offset="0%" stopColor="var(--color-secondary)" />
             <stop offset="50%" stopColor="var(--color-primary)" />
-            <stop offset="100%" stopColor="var(--color-quaternary)" />
+            <stop offset="100%" stopColor="var(--color-tertiary)" />
           </linearGradient>
         </defs>
         <g>

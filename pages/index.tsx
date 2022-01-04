@@ -2,7 +2,6 @@ import React, { ReactElement } from 'react';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { ChevronDoubleDownIcon } from '@heroicons/react/solid';
 import AppLink from '../components/AppLink';
 import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
@@ -20,23 +19,20 @@ const Home: NextPage = (): ReactElement => (
     <section id="intro" className="home-intro">
       <BgQuadrants />
       <div className="home-intro__heading-wrapper">
-        <h1>
-          <span className="highlighted-secondary">Front End</span>
-          <br /> Web Developer
+        <h1 className="home-intro__heading">
+          Front End
+          <br /> Developer
         </h1>
         <h2 className="home-intro__subheading mt-6">
           Based out of Charlotte, NC
         </h2>
-        <AppLink arrow="top-right" color="tertiary" href="#" className="mt-10">
-          R&eacute;sum&eacute;
-        </AppLink>
       </div>
       <div className="home-intro__actions">
+        <AppLink href="#" arrow="top-right">
+          R&eacute;sum&eacute;
+        </AppLink>
         <Link href="#about">
-          <a className="home-intro__scroll-link mt-6">
-            <ChevronDoubleDownIcon className="home-intro__scroll-link-icon" />
-            <span className="sr-only">About me</span>
-          </a>
+          <a className="c-btn mt-6">About me</a>
         </Link>
       </div>
     </section>
@@ -45,8 +41,7 @@ const Home: NextPage = (): ReactElement => (
         kicker="About me"
         heading={
           <>
-            <span>{"Hi, I'm "}</span>
-            <span className="highlighted-primary">Zack</span>
+            <span>{"Hi, I'm Zack"}</span>
             <Emoji
               label="hand waving emoji"
               symbol={'\u{1F44B}'}
@@ -67,11 +62,11 @@ const Home: NextPage = (): ReactElement => (
         </p>
         <p className="mt-8">
           {'You can find a full list of my relevant'}{' '}
-          <AppLink href="#skills" color="secondary">
+          <AppLink href="#skills" color="secondary" inline>
             skills
           </AppLink>{' '}
           {'and some of the'}{' '}
-          <AppLink href="#work" color="tertiary">
+          <AppLink href="#work" color="tertiary" inline>
             {"brands I've worked with"}
           </AppLink>{' '}
           {'in the sections below.'}
@@ -79,10 +74,12 @@ const Home: NextPage = (): ReactElement => (
       </div>
     </section>
     <section id="skills" className="home-skills">
-      <SectionHeading
-        kicker="Relevant Skills"
-        heading="Some of My Favorite Tools"
-      />
+      <div className="home-skills__heading-wrapper">
+        <SectionHeading
+          kicker="Relevant Skills"
+          heading="Some of My Favorite Developer Tools"
+        />
+      </div>
       <div className="home-skills__grid-wrapper mt-10">
         <TechnologiesGrid />
       </div>

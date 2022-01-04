@@ -20,19 +20,17 @@ module.exports = {
         transparent: 'transparent',
         black: '#000',
         white: '#FFF',
-        primary: '#4361EE',
-        secondary: '#4CC9F0',
-        tertiary: '#F72585',
-        quaternary: '#3A0CA3',
+        primary: '#0051D9',
+        secondary: '#00C0DA',
+        tertiary: '#3A0CA3',
         error: '#EF4444',
       },
       fontFamily: {
         heading: ['Poppins, Helvetica, Arial, sans-serif'],
-        body: ['Source Sans Pro, Helvetica, Arial, sans-serif'],
+        body: ['Open Sans, Helvetica, Arial, sans-serif'],
       },
       screens: {
         sm: '375px',
-        smd: '481px', // schmedium
         md: '768px',
         lg: '1024px',
         xl: '1280px',

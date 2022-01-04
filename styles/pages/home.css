@@ -1,7 +1,7 @@
 /* Intro section */
 .home-intro {
   @apply flex flex-col grow justify-between;
-  @apply px-8 pb-10;
+  @apply px-8 pb-20;
   @apply text-center;
   height: calc(100vh - 112px); /* height minus header */
 }
@@ -16,25 +16,6 @@
 
 .home-intro__actions {
   @apply flex flex-col items-center justify-center;
-}
-
-.home-intro__scroll-link {
-  @apply p-4;
-  @apply bg-transparent rounded-full;
-  @apply transition duration-150 ease-in-out;
-}
-
-.home-intro__scroll-link:hover {
-  @apply bg-gradient-to-br from-secondary via-primary to-quaternary;
-}
-
-.home-intro__scroll-link:hover .home-intro__scroll-link-icon {
-  @apply text-white;
-}
-
-.home-intro__scroll-link-icon {
-  @apply w-8 h-8;
-  @apply transition duration-150 ease-in-out;
 }
 
 /* About section */
@@ -52,13 +33,20 @@
 .home-skills {
   @apply flex flex-col items-center;
   @apply min-h-screen;
-  @apply px-8 py-20;
+  @apply pt-20;
   @apply bg-gray-100;
   z-index: 1; /* required for bg and highlight z stacking */
 }
 
+.home-skills__heading-wrapper {
+  @apply px-8;
+}
+
 .home-skills__grid-wrapper {
-  @apply flex grow justify-center items-center;
+  @apply flex grow;
+  @apply w-full;
+  @apply px-8 py-12;
+  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
 }
 
 /* Work section */

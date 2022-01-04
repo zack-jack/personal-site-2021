@@ -10,10 +10,3 @@
 .c-social-icon--linkedin:hover .c-social-icon__path {
   fill: url('#social-icon-linkedin-gradient');
 }
-
-#social-icon-github-gradient,
-#social-icon-linkedin-gradient {
-  --color-primary: theme('colors.primary');
-  --color-secondary: theme('colors.secondary');
-  --color-quaternary: theme('colors.quaternary');
-}

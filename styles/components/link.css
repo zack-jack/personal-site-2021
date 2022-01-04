@@ -1,52 +1,46 @@
 .c-link {
   @apply relative;
   @apply inline-flex items-center;
-  @apply border-b border-solid border-primary;
-  @apply text-gray-800 font-semibold leading-normal;
+  @apply px-1;
+  @apply border-b border-solid border-gray-800;
+  @apply text-gray-800 font-semibold uppercase leading-normal;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-link:hover {
-  @apply border-transparent;
-  @apply text-primary;
+  @apply border-b border-solid border-primary;
 }
 
-.c-link--secondary {
+.c-link::after {
+  @apply absolute inset-0 top-1/2;
+  @apply bg-gradient-to-r from-primary to-transparent;
+  @apply opacity-40;
+  content: none;
+  z-index: -1;
+}
+
+.c-link:hover.c-link::after {
+  content: '';
+}
+
+.c-link--inline {
+  @apply p-0;
+  @apply normal-case;
+}
+
+.c-link--secondary.c-link--secondary:hover {
   @apply border-secondary;
 }
 
 .c-link--secondary::after {
   @apply bg-gradient-to-r from-secondary to-transparent;
-  @apply opacity-40;
 }
 
-.c-link--secondary:hover {
-  @apply text-gray-800;
-  @apply border-secondary;
-}
-
-.c-link--tertiary {
+.c-link--tertiary.c-link--tertiary:hover {
   @apply border-tertiary;
 }
 
 .c-link--tertiary::after {
   @apply bg-gradient-to-r from-tertiary to-transparent;
   @apply opacity-30;
-}
-
-.c-link--tertiary:hover {
-  @apply text-gray-800;
-  @apply border-tertiary;
-}
-
-.c-link--secondary::after,
-.c-link--tertiary::after {
-  @apply absolute inset-0 top-1/2;
-  content: none;
-  z-index: -1;
-}
-
-.c-link--secondary:hover.c-link--secondary::after,
-.c-link--tertiary:hover.c-link--tertiary::after {
-  content: '';
 }

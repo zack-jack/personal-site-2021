@@ -1,16 +1,5 @@
 import React, { ReactElement, useEffect, useState } from 'react';
-import IconHtml from '../public/assets/images/_icon-html.svg';
-import IconCss from '../public/assets/images/_icon-css.svg';
-import IconJavascript from '../public/assets/images/_icon-javascript.svg';
-import IconReact from '../public/assets/images/_icon-react.svg';
-import IconVue from '../public/assets/images/_icon-vue.svg';
-import IconSvelte from '../public/assets/images/_icon-svelte.svg';
-import IconTypescript from '../public/assets/images/_icon-typescript.svg';
-import IconTailwindcss from '../public/assets/images/_icon-tailwindcss.svg';
-import IconWebpack from '../public/assets/images/_icon-webpack.svg';
-import IconNode from '../public/assets/images/_icon-node.svg';
-import IconJest from '../public/assets/images/_icon-jest.svg';
-import IconGit from '../public/assets/images/_icon-git.svg';
+import Image from 'next/image';
 import ReactTooltip from 'react-tooltip';
 
 const TechnologiesGrid = (): ReactElement => {
@@ -22,73 +11,108 @@ const TechnologiesGrid = (): ReactElement => {
 
   return (
     <div className="technologies-grid">
-      <IconHtml
+      <Image
+        alt="HTML 5"
+        src="/assets/images/_icon-html.svg"
         data-tip="HTML 5"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconCss
+      <Image
+        alt="CSS 3"
+        src="/assets/images/_icon-css.svg"
         data-tip="CSS 3"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconJavascript
+      <Image
+        alt="JavaScript"
+        src="/assets/images/_icon-javascript.svg"
         data-tip="JavaScript"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconReact
+      <Image
+        alt="React"
+        src="/assets/images/_icon-react.svg"
         data-tip="React"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconVue
+      <Image
+        alt="Vue"
+        src="/assets/images/_icon-vue.svg"
         data-tip="Vue"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconSvelte
+      <Image
+        alt="Svelte"
+        src="/assets/images/_icon-svelte.svg"
         data-tip="Svelte"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconTypescript
+      <Image
+        alt="TypeScript"
+        src="/assets/images/_icon-typescript.svg"
         data-tip="TypeScript"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconTailwindcss
+      <Image
+        alt="Tailwind CSS"
+        src="/assets/images/_icon-tailwindcss.svg"
         data-tip="Tailwind CSS"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconWebpack
+      <Image
+        alt="Webpack"
+        src="/assets/images/_icon-webpack.svg"
         data-tip="Webpack"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconNode
-        data-tip="Node JS"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+      <Image
+        alt="Node"
+        src="/assets/images/_icon-node.svg"
+        data-tip="Node"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconJest
+      <Image
+        alt="Jest"
+        src="/assets/images/_icon-jest.svg"
         data-tip="Jest"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
-      <IconGit
+      <Image
+        alt="Git"
+        src="/assets/images/_icon-git.svg"
         data-tip="Git"
-        tabIndex="-1"
-        className="technologies-grid__icon"
+        tabIndex={-1}
+        width={64}
+        height={64}
       />
       {isMounted && (
         <ReactTooltip
           backgroundColor="#4B5563"
           effect="solid"
-          offset={{ bottom: 4 }}
           place="bottom"
-          className="font-body font-semibold tracking-wide"
+          className="font-body text-xs font-semibold tracking-wide"
         />
       )}
     </div>

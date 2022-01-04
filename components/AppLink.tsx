@@ -12,7 +12,7 @@ interface AppLinkProps {
   arrow?: ArrowEnum;
   className?: string;
   color?: ColorEnum;
-  isBtn?: boolean;
+  inline?: boolean;
 }
 
 const AppLink = ({
@@ -21,13 +21,14 @@ const AppLink = ({
   arrow = '',
   className = '',
   color = 'primary',
-  isBtn = false,
+  inline = false,
 }: AppLinkProps): ReactElement => {
   return (
     <Link href={href}>
       <a
-        className={classNames(`${isBtn ? 'c-btn' : 'c-link'}`, {
+        className={classNames('c-link', {
           [`${className}`]: className,
+          'c-link--inline': inline,
           'c-link--secondary': color === 'secondary',
           'c-link--tertiary': color === 'tertiary',
         })}
@@ -36,7 +37,6 @@ const AppLink = ({
         {arrow && (
           <ArrowRightIcon
             className={classNames('w-4 h-4 ml-2', {
-              'text-white': isBtn,
               '-rotate-45': arrow === 'top-right',
               'rotate-90': arrow === 'down',
             })}
