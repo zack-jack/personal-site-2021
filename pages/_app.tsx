@@ -11,7 +11,7 @@ import '../styles/index.css';
 const queryClient = new QueryClient();
 
 function App({ Component, pageProps }: AppProps) {
-  const prefersReducedMotion = useReducedMotion();
+  const prefersReducedMotion: boolean = useReducedMotion();
 
   useEffect(() => {
     Globals.assign({

@@ -1,7 +1,20 @@
 .app-header {
+  @apply fixed top-0;
   @apply flex items-center justify-between;
   @apply w-full;
-  @apply px-6 py-10;
+  @apply px-6 py-8;
+  @apply bg-white;
+  @apply z-10;
+  @apply transition duration-150 ease-in-out;
+}
+
+.app-header--scrolled {
+  @apply p-6;
+  @apply bg-opacity-95;
+}
+
+.app-header--scrolled .app-header__logo {
+  @apply text-xl;
 }
 
 .app-header__logo {

@@ -1,9 +1,9 @@
 /* Intro section */
 .home-intro {
   @apply flex flex-col grow justify-between;
+  @apply min-h-screen;
   @apply px-8 pb-20;
   @apply text-center;
-  height: calc(100vh - 112px); /* height minus header */
 }
 
 .home-intro__heading-wrapper {
