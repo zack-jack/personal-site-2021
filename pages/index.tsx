@@ -28,7 +28,7 @@ const Home: NextPage = (): ReactElement => (
         </h2>
       </div>
       <div className="home-intro__actions">
-        <AppLink href="#" arrow="top-right">
+        <AppLink href="/resume" arrow="top-right">
           R&eacute;sum&eacute;
         </AppLink>
         <Link href="#about">

@@ -1,0 +1,12 @@
+.skip-link {
+  @apply absolute;
+  @apply p-1;
+  @apply bg-white;
+  @apply z-50;
+  @apply transition duration-150 ease-in-out;
+  transform: translateY(-120%);
+}
+
+.skip-link:focus {
+  @apply translate-y-0;
+}

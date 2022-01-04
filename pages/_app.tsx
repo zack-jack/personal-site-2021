@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { MouseEvent, useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { Globals } from 'react-spring';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Head from 'next/head';
+import Link from 'next/link';
 import AppHeader from '../components/AppHeader';
 import AppFooter from '../components/AppFooter';
 import useReducedMotion from '../hooks/useReducedMotion';
@@ -37,6 +38,16 @@ function App({ Component, pageProps }: AppProps) {
         id="app"
         className="relative flex flex-col min-h-screen overflow-hidden"
       >
+        <Link href="#main">
+          <a
+            className="skip-link"
+            onClick={(e: MouseEvent): void =>
+              (e.currentTarget as HTMLElement).blur()
+            }
+          >
+            Skip to Content
+          </a>
+        </Link>
         <AppHeader />
         <QueryClientProvider client={queryClient}>
           <main id="main" className="flex flex-col grow">
