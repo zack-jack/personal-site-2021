@@ -1,5 +1,67 @@
 .resume {
+  @apply mt-12;
+}
+
+.resume__wrapper {
   @apply flex flex-col grow;
   @apply min-h-screen;
-  padding-top: 100px;
+  @apply px-8 py-36;
+}
+
+.resume__actions {
+  @apply flex flex-col items-center;
+}
+
+.resume__heading {
+  @apply text-4xl tracking-wide;
+  line-height: 1.5;
+}
+
+.resume__subheading {
+  @apply text-2xl tracking-wide;
+  line-height: 1.2;
+}
+
+.resume__link {
+  @apply inline-block;
+}
+
+.resume__section {
+  @apply mt-12;
+  @apply leading-7;
+}
+
+.resume__row {
+  @apply flex flex-col;
+  @apply mt-4;
+
+  @screen smd {
+    @apply flex-row;
+  }
+}
+
+.resume__row:first-of-type {
+  @apply mt-6;
+}
+
+.resume__col-left {
+  @screen smd {
+    @apply w-1/4;
+  }
+}
+
+.resume__col-right {
+  @screen smd {
+    @apply w-3/4;
+  }
+}
+
+.resume__entry-heading {
+  @apply mt-1;
+}
+
+.resume__entry-list {
+  @apply mt-2;
+  @apply pl-6;
+  @apply list-disc;
 }

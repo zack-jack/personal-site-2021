@@ -12,10 +12,11 @@ import Hamburger from './Hamburger';
 import SocialIconGithub from './SocialIconGithub';
 import SocialIconLinkedIn from './SocialIconLinkedIn';
 
-const ITEMS_TRANSITION_DURATION = 300; // ms
+const ITEMS_TRANSITION_DURATION = 400; // ms
 const TRANSITION_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/#about' },
+  { name: 'Résumé', href: '/resume' },
   { name: 'Contact', href: '/#contact' },
 ];
 
@@ -52,7 +53,7 @@ const NavMenuMobile = (): ReactElement => {
     isMenuOpen
       ? [navRef, liRef, socialIconsRef]
       : [liRef, socialIconsRef, navRef],
-    [0, isMenuOpen ? 0.3 : 0, 0.6]
+    [0, isMenuOpen ? 0.4 : 0, 0.8]
   );
 
   return (

@@ -29,9 +29,9 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="Personal website for Zack Jackson front End Web Developer"
+          content="Personal website for Zack Jackson Front-End Developer"
         />
-        <title>Zack Jackson | Front End Developer</title>
+        <title>Zack Jackson | Front-End Developer</title>
       </Head>
 
       <div

@@ -20,7 +20,7 @@ const Home: NextPage = (): ReactElement => (
       <BgQuadrants />
       <div className="home-intro__heading-wrapper">
         <h1 className="home-intro__heading">
-          Front End
+          Front-End
           <br /> Developer
         </h1>
         <h2 className="home-intro__subheading mt-6">
@@ -57,7 +57,7 @@ const Home: NextPage = (): ReactElement => (
           }
         </p>
         <p className="mt-8">
-          My specialty is in front end development, but I do enjoy building APIs
+          My specialty is in front-end development, but I do enjoy building APIs
           and exploring new technologies from time to time.
         </p>
         <p className="mt-8">

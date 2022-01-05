@@ -1,0 +1,5 @@
+.c-hairline {
+  @apply block;
+  @apply w-full h-px;
+  @apply bg-gray-800;
+}
