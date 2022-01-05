@@ -1,5 +1,5 @@
 {
-  "name": "zack-jack.github.io",
+  "name": "personal-website",
   "private": true,
   "scripts": {
     "dev": "next dev",
