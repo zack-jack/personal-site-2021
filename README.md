@@ -1,3 +1,9 @@
+# Zack Jackson
+
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=zack-jack)
+
+Personal website
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
