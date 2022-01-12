@@ -1,0 +1,5 @@
+.home-contact {
+  @apply flex flex-col items-center;
+  @apply min-h-screen;
+  @apply px-8 py-20;
+}

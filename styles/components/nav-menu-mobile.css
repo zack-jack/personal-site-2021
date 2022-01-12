@@ -21,7 +21,7 @@
 }
 
 .c-nav-menu-mobile__menu-item:hover .c-nav-menu-mobile__link {
-  @apply bg-blue-200;
+  @apply bg-primary-100;
   @apply text-transparent bg-clip-text;
 }
 

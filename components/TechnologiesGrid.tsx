@@ -1,18 +1,18 @@
-import React, { ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import ReactTooltip from 'react-tooltip';
-import IconHtml from '../public/assets/images/_icon-html.svg';
-import IconCss from '../public/assets/images/_icon-css.svg';
-import IconJavaScript from '../public/assets/images/_icon-javascript.svg';
-import IconReact from '../public/assets/images/_icon-react.svg';
-import IconVue from '../public/assets/images/_icon-vue.svg';
-import IconSvelte from '../public/assets/images/_icon-svelte.svg';
-import IconTypeScript from '../public/assets/images/_icon-typescript.svg';
-import IconTailwindCss from '../public/assets/images/_icon-tailwindcss.svg';
-import IconWebpack from '../public/assets/images/_icon-webpack.svg';
-import IconNode from '../public/assets/images/_icon-node.svg';
-import IconJest from '../public/assets/images/_icon-jest.svg';
-import IconGit from '../public/assets/images/_icon-git.svg';
-import TechnologyIcon from './TechnologyIcon';
+import IconHtml from 'public/assets/images/_icon-html.svg';
+import IconCss from 'public/assets/images/_icon-css.svg';
+import IconJavaScript from 'public/assets/images/_icon-javascript.svg';
+import IconReact from 'public/assets/images/_icon-react.svg';
+import IconVue from 'public/assets/images/_icon-vue.svg';
+import IconSvelte from 'public/assets/images/_icon-svelte.svg';
+import IconTypeScript from 'public/assets/images/_icon-typescript.svg';
+import IconTailwindCss from 'public/assets/images/_icon-tailwindcss.svg';
+import IconWebpack from 'public/assets/images/_icon-webpack.svg';
+import IconNode from 'public/assets/images/_icon-node.svg';
+import IconJest from 'public/assets/images/_icon-jest.svg';
+import IconGit from 'public/assets/images/_icon-git.svg';
+import TechnologyIcon from 'components/TechnologyIcon';
 
 const TechnologiesGrid = (): ReactElement => {
   const [isMounted, setIsMounted] = useState(false);

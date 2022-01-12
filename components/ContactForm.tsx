@@ -1,13 +1,13 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import classNames from 'classnames';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useMutation } from 'react-query';
-import { contactSchema } from '../utils/validators/contact';
-import { post } from '../utils/http';
-import InputText from './InputText';
-import InputTextArea from './InputTextArea';
-import LoadingSpinner from './LoadingSpinner';
+import { contactSchema } from 'utils/validators/contact';
+import { post } from 'utils/http';
+import InputText from 'components/InputText';
+import InputTextArea from 'components/InputTextArea';
+import LoadingSpinner from 'components/LoadingSpinner';
 
 interface ContactFormProps {
   className?: string;

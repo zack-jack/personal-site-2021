@@ -1,13 +1,13 @@
-import React, { MouseEvent, useEffect } from 'react';
+import { MouseEvent, useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { Globals } from 'react-spring';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Head from 'next/head';
 import Link from 'next/link';
-import AppHeader from '../components/AppHeader';
-import AppFooter from '../components/AppFooter';
-import useReducedMotion from '../hooks/useReducedMotion';
-import '../styles/index.css';
+import AppHeader from 'components/AppHeader';
+import AppFooter from 'components/AppFooter';
+import useReducedMotion from 'hooks/useReducedMotion';
+import 'styles/index.css';
 
 const queryClient = new QueryClient();
 

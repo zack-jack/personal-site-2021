@@ -1,16 +1,13 @@
-import React, { ReactElement, ReactNode } from 'react';
-import classNames from 'classnames';
+import { ReactElement, ReactNode } from 'react';
 
 interface SectionHeadingProps {
   heading: ReactNode | string;
   kicker?: ReactNode | string;
-  onDarkBg?: boolean;
 }
 
 const SectionHeading = ({
   kicker,
   heading,
-  onDarkBg = false,
 }: SectionHeadingProps): ReactElement => {
   const HeadingTag = kicker ? 'h4' : 'h3';
 
@@ -22,15 +19,7 @@ const SectionHeading = ({
           <h3 className="c-section-kicker">{kicker}</h3>
         </div>
       )}
-      {
-        <HeadingTag
-          className={classNames('c-section-heading', {
-            'c-section-heading--on-dark-bg': onDarkBg,
-          })}
-        >
-          {heading}
-        </HeadingTag>
-      }
+      {<HeadingTag className="c-section-heading">{heading}</HeadingTag>}
     </div>
   );
 };

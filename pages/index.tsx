@@ -1,36 +1,46 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import Link from 'next/link';
-import AppLink from '../components/AppLink';
-import Emoji from '../components/Emoji';
-import SectionHeading from '../components/SectionHeading';
-import ContactForm from '../components/ContactForm';
+import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
+import AppLink from 'components/AppLink';
+import Emoji from 'components/Emoji';
+import SectionHeading from 'components/SectionHeading';
+import ContactForm from 'components/ContactForm';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
-const BrandLogos = dynamic(() => import('../components/BrandLogos'));
-const TechnologiesGrid = dynamic(
-  () => import('../components/TechnologiesGrid')
-);
+const BrandLogos = dynamic(() => import('components/BrandLogos'));
+const TechnologiesGrid = dynamic(() => import('components/TechnologiesGrid'));
 
 const Home: NextPage = (): ReactElement => (
   <>
     <section id="intro" className="home-intro">
-      <div className="home-intro__heading-wrapper">
-        <h1 className="home-intro__heading">
-          Front-End
-          <br /> Developer
-        </h1>
-        <h2 className="home-intro__subheading mt-6">
-          Based out of Charlotte, NC
-        </h2>
+      <div className="home-intro__hero">
+        <div className="home-intro__hero-image-wrapper">
+          <Image
+            alt="A mac, keyboard, plant, and coffee cup on a desktop"
+            src="/assets/images/_image-desktop.svg"
+            width={300}
+            height={300}
+          />
+        </div>
+        <div>
+          <h1 className="home-intro__heading">
+            Front-End
+            <br /> Developer
+          </h1>
+          <h2 className="home-intro__subheading">Based out of Charlotte, NC</h2>
+        </div>
       </div>
       <div className="home-intro__actions">
-        <AppLink href="/resume" arrow="top-right">
-          R&eacute;sum&eacute;
-        </AppLink>
         <Link href="#about">
-          <a className="c-btn mt-6">About me</a>
+          <a className="mt-6">
+            <div className="home-intro__arrow-down-wrapper">
+              <ArrowNarrowDownIcon className="home-intro__arrow-down" />
+            </div>
+            <span className="sr-only">Scroll down to About Me Section</span>
+          </a>
         </Link>
       </div>
     </section>

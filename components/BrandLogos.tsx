@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
-import LogoRedVentures from '../public/assets/images/_logo-red-ventures.svg';
-import LogoMymove from '../public/assets/images/_logo-mymove.svg';
-import LogoUsps from '../public/assets/images/_logo-usps.svg';
-import LogoAllconnect from '../public/assets/images/_logo-allconnect.svg';
-import LogoCnet from '../public/assets/images/_logo-cnet.svg';
+import LogoRedVentures from 'public/assets/images/_logo-red-ventures.svg';
+import LogoMymove from 'public/assets/images/_logo-mymove.svg';
+import LogoUsps from 'public/assets/images/_logo-usps.svg';
+import LogoAllconnect from 'public/assets/images/_logo-allconnect.svg';
+import LogoCnet from 'public/assets/images/_logo-cnet.svg';
 
 interface BrandLogosProps {
   className?: string;

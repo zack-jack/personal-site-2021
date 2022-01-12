@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { throttle } from '../utils/throttle';
-import { isBrowser } from '../utils/browser';
+import { throttle } from 'utils/throttle';
+import { isBrowser } from 'utils/browser';
 
 const useScrolledDown = (): boolean => {
   const [isScrolledDown, setIsScrolledDown] = useState(false);

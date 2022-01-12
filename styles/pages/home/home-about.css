@@ -1,0 +1,9 @@
+.home-about {
+  @apply flex flex-col items-center justify-center;
+  @apply min-h-screen;
+  @apply px-8 py-10;
+}
+
+.home-about__copy {
+  line-height: 2.2;
+}

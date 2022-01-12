@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import { ReactElement, useState } from 'react';
 import FocusTrap from 'focus-trap-react';
 import Link from 'next/link';
 import {
@@ -8,11 +8,11 @@ import {
   useSpringRef,
   useTransition,
 } from 'react-spring';
-import Hamburger from './Hamburger';
-import SocialIconGithub from './SocialIconGithub';
-import SocialIconLinkedIn from './SocialIconLinkedIn';
+import Hamburger from 'components/Hamburger';
+import SocialIconGithub from 'components/SocialIconGithub';
+import SocialIconLinkedIn from 'components/SocialIconLinkedIn';
 
-const ITEMS_TRANSITION_DURATION = 400; // ms
+const ITEMS_TRANSITION_DURATION = 200; // ms
 const TRANSITION_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/#about' },
@@ -53,7 +53,7 @@ const NavMenuMobile = (): ReactElement => {
     isMenuOpen
       ? [navRef, liRef, socialIconsRef]
       : [liRef, socialIconsRef, navRef],
-    [0, isMenuOpen ? 0.4 : 0, 0.8]
+    [0, isMenuOpen ? 0.2 : 0, 0.4]
   );
 
   return (

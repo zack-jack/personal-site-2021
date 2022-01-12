@@ -11,7 +11,7 @@
   }
 
   h1 {
-    @apply text-4xl tracking-wide;
+    @apply text-5xl tracking-wide;
     line-height: 1.2;
   }
 

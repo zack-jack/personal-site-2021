@@ -1,0 +1,16 @@
+.home-skills {
+  @apply flex flex-col items-center;
+  @apply min-h-screen;
+  @apply pt-20;
+  @apply bg-gray-100;
+  z-index: 1; /* required for bg and highlight z stacking */
+}
+
+.home-skills__heading-wrapper {
+  @apply px-8;
+}
+
+.home-skills__content {
+  @apply flex grow;
+  @apply w-full;
+}

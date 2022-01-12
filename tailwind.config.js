@@ -19,17 +19,15 @@ module.exports = {
         black: '#000',
         white: '#FFF',
         gray: {
-          ...colors.neutral,
+          ...colors.gray,
         },
-        blue: {
-          100: '#55BDEA',
-          200: '#27ABE5',
-          300: '#178ec2',
+        primary: {
+          100: '#274BE3',
+          200: '#2343cc',
         },
-        green: {
-          100: '#54EACD',
-          200: '#27E4C0',
-          300: '#18C0A0',
+        secondary: {
+          100: '#27E4C0',
+          200: '#23cdac',
         },
         red: '#E5274C',
       },

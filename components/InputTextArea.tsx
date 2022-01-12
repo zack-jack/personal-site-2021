@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import classNames from 'classnames';
-import { stringToCamel } from '../utils/stringManipulations';
+import { stringToCamel } from 'utils/stringManipulations';
 
 interface InputTextAreaProps {
   error: string;

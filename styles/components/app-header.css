@@ -23,6 +23,6 @@
 }
 
 .app-header__logo:hover {
-  @apply bg-blue-200;
+  @apply bg-primary-100;
   @apply text-transparent bg-clip-text;
 }

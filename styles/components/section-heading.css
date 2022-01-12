@@ -8,10 +8,6 @@
   @apply text-2xl tracking-wide;
 }
 
-.c-section-heading--on-dark-bg {
-  @apply text-white;
-}
-
 .c-section-kicker {
   @apply ml-2;
   @apply text-base uppercase font-normal tracking-widest;
@@ -24,7 +20,7 @@
 
 .c-section-kicker__line {
   @apply w-10;
-  @apply bg-blue-200;
+  @apply bg-gray-800;
   height: 2px;
 }
 

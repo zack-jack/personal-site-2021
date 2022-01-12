@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
-import NavMenuMobile from './NavMenuMobile';
-import useScrolledDown from '../hooks/useScrolledDown';
+import NavMenuMobile from 'components/NavMenuMobile';
+import useScrolledDown from 'hooks/useScrolledDown';
 
 const AppHeader = (): ReactElement => {
   const isScrolledDown: boolean = useScrolledDown();

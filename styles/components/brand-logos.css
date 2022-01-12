@@ -18,7 +18,7 @@
 }
 
 .brand-logos__logo-link:hover {
-  @apply bg-blue-200;
+  @apply bg-primary-100;
 }
 
 .brand-logos__logo {

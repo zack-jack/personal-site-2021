@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { animated, useSpring } from 'react-spring';
 
 interface HamburgerProps {

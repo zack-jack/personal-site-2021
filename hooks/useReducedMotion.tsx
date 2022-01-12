@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { isBrowser } from '../utils/browser';
+import { isBrowser } from 'utils/browser';
 
 const useReducedMotion = (): boolean => {
   const [matches, setMatch] = useState(false);

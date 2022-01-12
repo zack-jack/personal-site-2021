@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Link from 'next/link';
 import { HeartIcon } from '@heroicons/react/solid';
-import SocialIconGithub from './SocialIconGithub';
-import SocialIconLinkedIn from './SocialIconLinkedIn';
+import SocialIconGithub from 'components/SocialIconGithub';
+import SocialIconLinkedIn from 'components/SocialIconLinkedIn';
 
 const AppFooter = (): ReactElement => {
   return (

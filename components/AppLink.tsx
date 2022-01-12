@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import classNames from 'classnames';
 import Link from 'next/link';
