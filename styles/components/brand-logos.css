@@ -18,7 +18,7 @@
 }
 
 .brand-logos__logo-link:hover {
-  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
+  @apply bg-blue-200;
 }
 
 .brand-logos__logo {

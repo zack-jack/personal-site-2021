@@ -21,7 +21,7 @@
 }
 
 .c-nav-menu-mobile__menu-item:hover .c-nav-menu-mobile__link {
-  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
+  @apply bg-blue-200;
   @apply text-transparent bg-clip-text;
 }
 

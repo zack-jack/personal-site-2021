@@ -19,7 +19,7 @@ const SectionHeading = ({
       {kicker && (
         <div className="c-section-kicker__wrapper">
           <div className="c-section-kicker__line" />
-          <h3 className="c-section-kicker text-gradient">{kicker}</h3>
+          <h3 className="c-section-kicker">{kicker}</h3>
         </div>
       )}
       {

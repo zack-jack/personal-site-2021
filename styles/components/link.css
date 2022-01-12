@@ -8,12 +8,12 @@
 }
 
 .c-link:hover {
-  @apply border-b border-solid border-primary;
+  @apply border-b border-solid border-blue-200;
 }
 
 .c-link::after {
   @apply absolute inset-0 top-1/2;
-  @apply bg-gradient-to-r from-primary to-transparent;
+  @apply bg-gradient-to-r from-blue-200 to-transparent;
   @apply opacity-40;
   content: none;
   z-index: -1;
@@ -29,18 +29,18 @@
 }
 
 .c-link--secondary.c-link--secondary:hover {
-  @apply border-secondary;
+  @apply border-green-200;
 }
 
 .c-link--secondary::after {
-  @apply bg-gradient-to-r from-secondary to-transparent;
+  @apply bg-gradient-to-r from-red to-transparent;
 }
 
 .c-link--tertiary.c-link--tertiary:hover {
-  @apply border-tertiary;
+  @apply border-blue-200;
 }
 
 .c-link--tertiary::after {
-  @apply bg-gradient-to-r from-tertiary to-transparent;
+  @apply bg-gradient-to-r from-green-200 to-transparent;
   @apply opacity-30;
 }

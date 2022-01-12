@@ -1,5 +1,5 @@
 :root {
-  --color-primary: theme('colors.primary');
-  --color-secondary: theme('colors.secondary');
-  --color-tertiary: theme('colors.tertiary');
+  --color-primary: theme('colors.blue.200');
+  --color-secondary: theme('colors.green.200');
+  --color-tertiary: theme('colors.red');
 }

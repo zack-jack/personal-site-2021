@@ -9,5 +9,5 @@
 }
 
 .contact-form__api-error {
-  @apply text-red-500;
+  @apply text-red;
 }

@@ -19,10 +19,10 @@
 }
 
 .c-input-field--error {
-  @apply border-b-2 border-error;
+  @apply border-b-2 border-red;
 }
 
 .c-input-error {
   @apply ml-2;
-  @apply text-sm text-error font-medium;
+  @apply text-sm text-red font-medium;
 }

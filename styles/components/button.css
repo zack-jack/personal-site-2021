@@ -2,12 +2,12 @@
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-3;
-  @apply bg-gradient-to-br from-primary to-tertiary;
+  @apply bg-blue-200;
   @apply text-white font-semibold uppercase;
   @apply rounded;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-btn:hover {
-  @apply bg-gradient-to-br from-secondary via-primary to-tertiary;
+  @apply bg-blue-100;
 }

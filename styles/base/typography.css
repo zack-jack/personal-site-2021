@@ -1,4 +1,0 @@
-.text-gradient {
-  @apply bg-gradient-to-br from-primary to-tertiary;
-  @apply text-transparent bg-clip-text;
-}

@@ -3,7 +3,6 @@ import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import AppLink from '../components/AppLink';
-import BgQuadrants from '../components/BgQuadrants';
 import Emoji from '../components/Emoji';
 import SectionHeading from '../components/SectionHeading';
 import ContactForm from '../components/ContactForm';
@@ -17,7 +16,6 @@ const TechnologiesGrid = dynamic(
 const Home: NextPage = (): ReactElement => (
   <>
     <section id="intro" className="home-intro">
-      <BgQuadrants />
       <div className="home-intro__heading-wrapper">
         <h1 className="home-intro__heading">
           Front-End

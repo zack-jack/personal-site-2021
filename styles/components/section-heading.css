@@ -24,7 +24,7 @@
 
 .c-section-kicker__line {
   @apply w-10;
-  @apply bg-gradient-to-r from-secondary via-primary to-tertiary;
+  @apply bg-blue-200;
   height: 2px;
 }
 
