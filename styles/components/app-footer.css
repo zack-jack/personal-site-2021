@@ -15,5 +15,6 @@
 
 .app-footer__made-with-icon {
   @apply w-5 h-5;
+  @apply text-primary-100;
   margin: 0 2px;
 }

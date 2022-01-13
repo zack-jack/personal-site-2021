@@ -16,7 +16,7 @@ const ITEMS_TRANSITION_DURATION = 200; // ms
 const TRANSITION_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/#about' },
-  { name: 'Résumé', href: '/resume' },
+  { name: 'Résumé', href: '/Resume.pdf', target: '_blank' },
   { name: 'Contact', href: '/#contact' },
 ];
 
@@ -76,7 +76,7 @@ const NavMenuMobile = (): ReactElement => {
               aria-labelledby="nav-menu-trigger"
               role="menu"
             >
-              {liTransitions((styles, { name, href }) => (
+              {liTransitions((styles, { name, href, target }) => (
                 <animated.li
                   key={name.toLowerCase()}
                   className="c-nav-menu-mobile__menu-item"
@@ -84,6 +84,8 @@ const NavMenuMobile = (): ReactElement => {
                 >
                   <Link href={href}>
                     <a
+                      target={target || '_self'}
+                      rel="noopener noreferrer"
                       className="c-nav-menu-mobile__link"
                       onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >

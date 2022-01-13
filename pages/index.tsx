@@ -101,6 +101,13 @@ const Home: NextPage = (): ReactElement => (
     <section id="contact" className="home-contact">
       <SectionHeading kicker="Let's Talk" heading="Contact Me" />
       <ContactForm className="mt-10" />
+      <div className="mt-10">
+        <Link href="/Resume.pdf">
+          <a target="_blank" rel="noopener noreferrer" className="c-link">
+            Download Résumé PDF
+          </a>
+        </Link>
+      </div>
     </section>
   </>
 );
