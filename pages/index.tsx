@@ -1,18 +1,17 @@
 import { ReactElement } from 'react';
 import type { NextPage } from 'next';
+import { CloudDownloadIcon } from '@heroicons/react/outline';
+import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CloudDownloadIcon } from '@heroicons/react/outline';
-import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
-import AppLink from 'components/AppLink';
-import Emoji from 'components/Emoji';
-import SectionHeading from 'components/SectionHeading';
-import ContactForm from 'components/ContactForm';
-import AnimatedBlob from 'components/AnimatedBlob';
-import SocialIconGithub from 'components/SocialIconGithub';
-import SocialIconLinkedIn from 'components/SocialIconLinkedIn';
 import LazyLoad from 'react-lazyload';
+import AnimatedBlob from 'components/AnimatedBlob';
+import AppLink from 'components/AppLink';
+import ContactForm from 'components/ContactForm';
+import Emoji from 'components/Emoji';
+import HomeIntroHeadings from 'components/HomeIntroHeadings';
+import SectionHeading from 'components/SectionHeading';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
 const BrandLogos = dynamic(() => import('components/BrandLogos'));
@@ -30,25 +29,7 @@ const Home: NextPage = (): ReactElement => (
           />
         </div>
         <div className="home-intro__headings">
-          <h1 className="home-intro__heading">
-            Front-End
-            <br /> Developer
-          </h1>
-          <h2 className="home-intro__subheading">Based out of Charlotte, NC</h2>
-          <div className="home-intro__socials">
-            <Link href="https://github.com/zack-jack">
-              <a target="_blank" rel="noopener noreferrer">
-                <SocialIconGithub />
-                <span className="sr-only">Github</span>
-              </a>
-            </Link>
-            <Link href="https://www.linkedin.com/in/zack-jackson/">
-              <a target="_blank" rel="noopener noreferrer" className="ml-10">
-                <SocialIconLinkedIn />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </Link>
-          </div>
+          <HomeIntroHeadings />
         </div>
       </div>
       <div className="home-intro__actions">
