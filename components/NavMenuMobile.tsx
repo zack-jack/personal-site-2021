@@ -7,7 +7,7 @@ import {
   useSpring,
   useSpringRef,
   useTransition,
-} from 'react-spring';
+} from '@react-spring/web';
 import Hamburger from 'components/Hamburger';
 import SocialIconGithub from 'components/SocialIconGithub';
 import SocialIconLinkedIn from 'components/SocialIconLinkedIn';

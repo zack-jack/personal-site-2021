@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { animated, useSpring } from 'react-spring';
+import { animated, useSpring } from '@react-spring/web';
 
 interface HamburgerProps {
   isMenuOpen: boolean;

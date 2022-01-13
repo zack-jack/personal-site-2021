@@ -1,6 +1,6 @@
 import { MouseEvent, useEffect } from 'react';
 import type { AppProps } from 'next/app';
-import { Globals } from 'react-spring';
+import { Globals } from '@react-spring/web';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Head from 'next/head';
 import Link from 'next/link';
