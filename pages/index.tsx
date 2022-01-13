@@ -62,7 +62,7 @@ const Home: NextPage = (): ReactElement => (
         <div className="home-about__copy mt-10">
           <p>
             {
-              "I'm a web developer who enjoys building enjoyable and accessible user experiences."
+              "I'm a web developer who strives to build delightful and accessible user experiences."
             }
           </p>
           <p className="mt-8">
