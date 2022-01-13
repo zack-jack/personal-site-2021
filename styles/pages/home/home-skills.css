@@ -4,7 +4,6 @@
   @apply min-h-screen;
   @apply px-8 py-10;
   @apply bg-gray-900;
-  scroll-margin-top: 88px; /* height of header */
 
   @screen 481 {
     @apply px-16;

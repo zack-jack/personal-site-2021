@@ -4,6 +4,7 @@
   @apply min-h-screen;
   @apply px-8 py-20;
   @apply bg-gray-800;
+  scroll-margin-top: 88px; /* height of header */
 
   @screen 481 {
     @apply px-16;
@@ -11,6 +12,7 @@
 
   @screen 768 {
     @apply p-32;
+    scroll-margin-top: 0;
   }
 
   @screen 1440 {

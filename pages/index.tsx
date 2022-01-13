@@ -12,6 +12,7 @@ import ContactForm from 'components/ContactForm';
 import AnimatedBlob from 'components/AnimatedBlob';
 import SocialIconGithub from 'components/SocialIconGithub';
 import SocialIconLinkedIn from 'components/SocialIconLinkedIn';
+import LazyLoad from 'react-lazyload';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
 const BrandLogos = dynamic(() => import('components/BrandLogos'));
@@ -110,14 +111,18 @@ const Home: NextPage = (): ReactElement => (
           />
         </div>
         <div className="home-skills__grid-wrapper mt-10 1024:mt-16">
-          <TechnologiesGrid />
+          <LazyLoad offset={100} once>
+            <TechnologiesGrid />
+          </LazyLoad>
         </div>
       </div>
     </section>
     <section id="work" className="home-work">
       <div className="home-work__content">
         <SectionHeading kicker="My Work" heading="Brands I've Worked With" />
-        <BrandLogos className="mt-10 1024:mt-16" />
+        <LazyLoad offset={100} once>
+          <BrandLogos className="mt-10 1024:mt-16" />
+        </LazyLoad>
       </div>
     </section>
     <section id="contact" className="home-contact">
