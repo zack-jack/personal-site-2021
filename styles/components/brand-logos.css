@@ -23,7 +23,7 @@
 }
 
 .brand-logos__logo {
-  @apply fill-gray-500;
+  @apply fill-gray-400;
   @apply transition duration-150 ease-in-out;
 }
 

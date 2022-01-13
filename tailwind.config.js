@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     fill: (theme) => ({
       'gray-100': theme('colors.gray.100'),
-      'gray-500': theme('colors.gray.500'),
+      'gray-400': theme('colors.gray.400'),
       'primary-100': theme('colors.primary.100'),
     }),
     extend: {
@@ -40,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
