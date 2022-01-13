@@ -75,6 +75,16 @@
   }
 }
 
+.home-intro__socials {
+  @apply hidden;
+  @apply w-full;
+  @apply mt-6;
+
+  @screen 768 {
+    @apply flex justify-center;
+  }
+}
+
 .home-intro__actions {
   @apply flex flex-col items-center justify-center;
 }
