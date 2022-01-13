@@ -92,7 +92,7 @@ const Home: NextPage = (): ReactElement => (
           />
         </div>
         <div className="home-skills__grid-wrapper mt-10 1024:mt-16">
-          <LazyLoad offset={100} once>
+          <LazyLoad offset={200} once>
             <TechnologiesGrid />
           </LazyLoad>
         </div>
@@ -101,7 +101,7 @@ const Home: NextPage = (): ReactElement => (
     <section id="work" className="home-work">
       <div className="home-work__content">
         <SectionHeading kicker="My Work" heading="Brands I've Worked With" />
-        <LazyLoad offset={100} once>
+        <LazyLoad offset={200} once>
           <BrandLogos className="mt-10 1024:mt-16" />
         </LazyLoad>
       </div>
