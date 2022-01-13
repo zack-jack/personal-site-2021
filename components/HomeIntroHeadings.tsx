@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from 'react';
-import { animated, config, easings, useTransition } from '@react-spring/web';
+import { animated, easings, useTransition } from '@react-spring/web';
 import Link from 'next/link';
 import SocialIconGithub from 'components/SocialIconGithub';
 import SocialIconLinkedIn from 'components/SocialIconLinkedIn';
