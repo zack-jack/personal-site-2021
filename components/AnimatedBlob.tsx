@@ -12,6 +12,7 @@ const AnimatedBlob = ({ className }: AnimatedBlobProps): ReactElement => {
 
   useEffect(() => {
     KUTE.fromTo(
+      /* @ts-ignore: This package has weird typescript support */
       `#${blobOneId}`,
       { path: `#${blobOneId}` },
       { path: `#${blobTwoId}` },
