@@ -58,7 +58,7 @@ const NavMenuMobile = (): ReactElement => {
 
   return (
     <FocusTrap active={isMenuOpen}>
-      <div>
+      <div className="c-nav-menu-mobile">
         <Hamburger
           isMenuOpen={isMenuOpen}
           toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
@@ -70,7 +70,7 @@ const NavMenuMobile = (): ReactElement => {
           className="c-nav-menu-mobile__wrapper"
           style={navSpringStyles}
         >
-          <nav aria-hidden={!isMenuOpen} className="c-nav-menu-mobile">
+          <nav aria-hidden={!isMenuOpen} className="c-nav-menu-mobile__nav">
             <ul
               id="nav-menu-mobile"
               aria-labelledby="nav-menu-trigger"

@@ -2,11 +2,19 @@
   @apply flex grow flex-wrap;
   gap: calc(50% - 96px);
   row-gap: 40px;
+
+  @screen 768 {
+    row-gap: 100px;
+  }
 }
 
 .technologies-grid__wrapper {
   @apply flex flex-col;
-  @apply px-8 py-12;
+  @apply py-12;
+
+  @screen 768 {
+    @apply pb-20;
+  }
 }
 
 .technologies-grid__icon {

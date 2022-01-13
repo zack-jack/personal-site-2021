@@ -1,0 +1,26 @@
+.c-nav-desktop {
+  @apply hidden;
+  @apply items-center;
+
+  @screen 768 {
+    @apply flex;
+  }
+}
+
+.c-nav-desktop__list {
+  @apply flex items-center;
+}
+
+.c-nav-desktop__list-item:not(:first-of-type) {
+  @apply ml-8;
+}
+
+.c-nav-desktop__link {
+  @apply flex items-center;
+  @apply text-gray-100 uppercase font-bold;
+}
+
+.c-nav-desktop__link:hover {
+  @apply border-b border-solid border-transparent;
+  @apply text-primary-100;
+}

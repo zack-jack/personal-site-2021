@@ -5,7 +5,6 @@ import LogoRedVentures from 'public/assets/images/_logo-red-ventures.svg';
 import LogoMymove from 'public/assets/images/_logo-mymove.svg';
 import LogoUsps from 'public/assets/images/_logo-usps.svg';
 import LogoAllconnect from 'public/assets/images/_logo-allconnect.svg';
-import LogoCnet from 'public/assets/images/_logo-cnet.svg';
 
 interface BrandLogosProps {
   className?: string;
@@ -60,16 +59,6 @@ const BrandLogos = ({ className = '' }: BrandLogosProps): ReactElement => {
             height={40}
             className="brand-logos__logo"
           />
-        </a>
-      </Link>
-      <Link href="https://www.cnet.com/">
-        <a
-          aria-label="CNET"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="brand-logos__logo-link"
-        >
-          <LogoCnet width={55} height={40} className="brand-logos__logo" />
         </a>
       </Link>
     </div>

@@ -1,5 +1,9 @@
 .brand-logos {
   @apply flex flex-col w-full;
+
+  @screen 1024 {
+    @apply flex-row flex-wrap justify-between;
+  }
 }
 
 .brand-logos__logo-link {
@@ -11,10 +15,35 @@
   @apply rounded;
   @apply cursor-pointer;
   @apply transition duration-150 ease-in-out;
+
+  @screen 768 {
+    @apply px-10 py-16;
+  }
+
+  @screen 1024 {
+    width: calc(50% - 40px);
+  }
+}
+
+.brand-logos__logo-link:nth-child(even) {
+  @screen 1024 {
+    @apply mt-20;
+  }
 }
 
 .brand-logos__logo-link:not(:first-child) {
   @apply mt-8;
+
+  @screen 1024 {
+    @apply mt-0;
+  }
+}
+
+.brand-logos__logo-link:nth-child(3),
+.brand-logos__logo-link:nth-child(4) {
+  @screen 1024 {
+    @apply mt-20;
+  }
 }
 
 .brand-logos__logo-link:hover {

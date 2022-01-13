@@ -1,15 +1,21 @@
 .c-nav-menu-mobile {
-  @apply flex grow items-center justify-end;
-  @apply pb-20 pr-6;
-  padding-top: 88px; /* Header height */
+  @screen 768 {
+    @apply hidden;
+  }
 }
 
 .c-nav-menu-mobile__wrapper {
   @apply absolute inset-0;
   @apply flex flex-col;
   @apply h-screen;
-  @apply bg-secondary-200;
+  @apply bg-secondary-300;
   @apply overflow-hidden z-20;
+}
+
+.c-nav-menu-mobile__nav {
+  @apply flex grow items-center justify-end;
+  @apply pb-20 pr-6;
+  padding-top: 88px; /* Header height */
 }
 
 .c-nav-menu-mobile__menu-item {

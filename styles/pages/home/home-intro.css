@@ -1,26 +1,78 @@
 .home-intro {
   @apply flex flex-col grow;
+  @apply w-full;
   @apply min-h-screen;
   @apply px-8 pb-10;
   @apply text-center;
   padding-top: 88px; /* Header height */
+
+  @screen 481 {
+    @apply px-16;
+  }
+
+  @screen 768 {
+    @apply px-32 py-20;
+    padding-top: 104px; /* Header height */
+  }
+
+  @screen 1024 {
+    padding-top: 124px; /* Header height */
+  }
 }
 
 .home-intro__hero {
-  @apply flex flex-col grow justify-evenly;
+  @apply flex flex-col grow items-center justify-evenly;
+
+  @screen 1024 {
+    @apply flex-row items-center justify-around;
+  }
 }
 
 .home-intro__hero-image-wrapper {
-  @apply flex items-center justify-center;
+  @apply relative;
+  width: 300px;
+  height: 300px;
+
+  @screen 768 {
+    width: 350px;
+    height: 350px;
+  }
+
+  @screen 1024 {
+    width: 400px;
+    height: 400px;
+  }
+
+  @screen 1280 {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 .home-intro__heading-wrapper {
   @apply flex flex-col grow items-center justify-center;
 }
 
+.home-intro__headings {
+  @screen 1024 {
+    @apply ml-6;
+  }
+}
+
+.home-intro__heading {
+  @screen 1280 {
+    @apply text-6xl;
+  }
+}
+
 .home-intro__subheading {
   @apply mt-6;
   @apply text-lg font-normal;
+
+  @screen 1280 {
+    @apply mt-10;
+    @apply text-2xl;
+  }
 }
 
 .home-intro__actions {
@@ -33,6 +85,10 @@
   @apply border border-solid border-gray-600;
   @apply rounded-full;
   @apply transition duration-150 ease-in-out;
+
+  @screen 768 {
+    @apply w-14 h-14;
+  }
 }
 
 .home-intro__arrow-down-wrapper:hover {
@@ -48,4 +104,8 @@
   @apply w-5;
   @apply text-gray-600;
   @apply transition duration-150 ease-in-out;
+
+  @screen 768 {
+    @apply w-6;
+  }
 }

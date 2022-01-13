@@ -1,7 +1,28 @@
 .home-work {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center justify-center;
+  @apply w-full;
   @apply min-h-screen;
   @apply px-8 py-20;
   @apply bg-gray-800;
-  scroll-margin-top: -1px;
+
+  @screen 481 {
+    @apply px-16;
+  }
+
+  @screen 768 {
+    @apply p-32;
+  }
+
+  @screen 1440 {
+    @apply rounded-3xl;
+  }
+}
+
+.home-work__content {
+  @apply w-full;
+
+  @screen 1024 {
+    @apply w-full;
+    @apply max-w-3xl;
+  }
 }

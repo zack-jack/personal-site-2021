@@ -3,3 +3,9 @@
 @import './home-skills.css';
 @import './home-work.css';
 @import './home-contact.css';
+
+.home {
+  @apply flex flex-col items-center;
+  @apply w-full;
+  @apply max-w-screen-1440;
+}

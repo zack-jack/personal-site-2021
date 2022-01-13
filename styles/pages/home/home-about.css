@@ -1,8 +1,17 @@
 .home-about {
   @apply relative;
   @apply flex flex-col items-center justify-center;
+  @apply w-full;
   @apply min-h-screen;
   @apply px-8 py-10;
+
+  @screen 481 {
+    @apply px-20;
+  }
+
+  @screen 768 {
+    @apply px-32 py-20;
+  }
 }
 
 .home-about__blob {
@@ -11,8 +20,45 @@
   @apply -z-10;
   top: 20%;
   transform: scale(1.75);
+
+  @screen 768 {
+    @apply top-1/4;
+    transform: scale(1.85);
+  }
+
+  @screen 1024 {
+    top: 28%;
+    transform: scale(2);
+  }
+
+  @screen 1280 {
+    top: 30%;
+    transform: scale(2.2);
+  }
+}
+
+.home-about__content {
+  @apply w-full;
+
+  @screen 768 {
+    @apply w-2/3;
+  }
+
+  @screen 1024 {
+    @apply w-full;
+    @apply max-w-3xl;
+  }
 }
 
 .home-about__copy {
+  @apply w-full;
   line-height: 2.2;
+
+  @screen 1024 {
+    @apply w-4/5;
+  }
+
+  @screen 1280 {
+    @apply w-10/12;
+  }
 }

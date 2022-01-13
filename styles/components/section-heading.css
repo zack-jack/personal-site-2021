@@ -10,7 +10,7 @@
 
 .c-section-kicker {
   @apply ml-2;
-  @apply text-base uppercase font-normal tracking-widest;
+  @apply text-base text-primary-100 uppercase font-normal tracking-widest;
 }
 
 .c-section-kicker__wrapper {
@@ -20,7 +20,7 @@
 
 .c-section-kicker__line {
   @apply w-10;
-  @apply bg-gray-100;
+  @apply bg-primary-100;
   height: 2px;
 }
 

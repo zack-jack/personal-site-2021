@@ -1,5 +1,25 @@
 .home-contact {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center justify-center;
+  @apply w-full;
   @apply min-h-screen;
   @apply px-8 py-20;
+
+  @screen 481 {
+    @apply px-16;
+  }
+
+  @screen 768 {
+    @apply p-32;
+  }
+}
+
+.home-contact__content {
+  @apply flex flex-col items-center;
+  @apply w-full;
+  @apply max-w-xl;
+
+  @screen 1024 {
+    @apply w-full;
+    @apply max-w-3xl;
+  }
 }

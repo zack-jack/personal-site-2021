@@ -35,7 +35,7 @@
   @apply flex flex-col;
   @apply mt-4;
 
-  @screen smd {
+  @screen 481 {
     @apply flex-row;
   }
 }
@@ -45,13 +45,13 @@
 }
 
 .resume__col-left {
-  @screen smd {
+  @screen 481 {
     @apply w-1/4;
   }
 }
 
 .resume__col-right {
-  @screen smd {
+  @screen 481 {
     @apply w-3/4;
   }
 }

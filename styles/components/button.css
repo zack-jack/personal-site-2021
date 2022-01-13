@@ -9,5 +9,5 @@
 }
 
 .c-btn:hover {
-  @apply bg-primary-100;
+  @apply bg-secondary-200;
 }

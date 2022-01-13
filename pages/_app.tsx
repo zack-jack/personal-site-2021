@@ -50,7 +50,7 @@ function App({ Component, pageProps }: AppProps) {
         </Link>
         <AppHeader />
         <QueryClientProvider client={queryClient}>
-          <main id="main" className="flex flex-col grow">
+          <main id="main" className="flex flex-col items-center grow">
             <Component {...pageProps} />
           </main>
         </QueryClientProvider>

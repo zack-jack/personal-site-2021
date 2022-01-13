@@ -67,7 +67,7 @@ const ContactForm = ({ className = '' }: ContactFormProps): ReactElement => {
         label="Email"
         placeholder="Email"
         register={register}
-        className="mt-6"
+        className="mt-6 1024:mt-8"
         error={formState?.errors?.email?.message || ''}
       />
       <InputTextArea
@@ -75,7 +75,7 @@ const ContactForm = ({ className = '' }: ContactFormProps): ReactElement => {
         label="Message"
         placeholder="Message"
         register={register}
-        className="mt-6"
+        className="mt-6 1024:mt-8"
         error={formState?.errors?.message?.message || ''}
       />
       {isSuccess && (
@@ -89,7 +89,7 @@ const ContactForm = ({ className = '' }: ContactFormProps): ReactElement => {
             'There was an error processing your request.'}
         </p>
       )}
-      <button type="submit" className="c-btn mt-8">
+      <button type="submit" className="c-btn mt-8 1024:mt-12">
         {isLoading ? <LoadingSpinner /> : 'Submit'}
       </button>
     </form>
