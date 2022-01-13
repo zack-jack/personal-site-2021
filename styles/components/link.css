@@ -3,7 +3,7 @@
   @apply inline-flex items-center;
   @apply px-1;
   @apply border-b border-solid border-primary-100;
-  @apply text-gray-800 font-semibold uppercase leading-normal;
+  @apply text-gray-100 font-semibold uppercase leading-normal;
   @apply transition duration-150 ease-in-out;
 }
 

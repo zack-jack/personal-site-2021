@@ -2,27 +2,25 @@
   @apply fixed top-0;
   @apply flex items-center justify-between;
   @apply w-full;
-  @apply px-6 py-8;
-  @apply bg-white;
+  @apply p-6;
+  @apply bg-gray-900;
   @apply z-10;
   @apply transition duration-150 ease-in-out;
 }
 
 .app-header--scrolled {
-  @apply p-6;
   @apply bg-opacity-95;
 }
 
-.app-header--scrolled .app-header__logo {
-  @apply text-xl;
-}
-
-.app-header__logo {
-  @apply font-heading font-bold text-2xl;
+.app-header__logo-link {
+  @apply w-10 h-10;
   @apply transition duration-150 ease-in-out;
 }
 
-.app-header__logo:hover {
-  @apply bg-primary-100;
-  @apply text-transparent bg-clip-text;
+.app-header__logo-link path {
+  @apply fill-gray-100;
+}
+
+.app-header__logo-link:hover path {
+  @apply fill-primary-100;
 }

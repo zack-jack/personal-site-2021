@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import NavMenuMobile from 'components/NavMenuMobile';
 import useScrolledDown from 'hooks/useScrolledDown';
+import LogoZackJackson from 'public/assets/images/_logo-zack-jackson.svg';
 
 const AppHeader = (): ReactElement => {
   const isScrolledDown: boolean = useScrolledDown();
@@ -15,8 +16,9 @@ const AppHeader = (): ReactElement => {
       })}
     >
       <Link href="/">
-        <a aria-label="Go to Homepage" className="app-header__logo">
-          Zack Jackson
+        <a className="app-header__logo">
+          <LogoZackJackson aria-hidden className="app-header__logo-link" />
+          <span className="sr-only">Home</span>
         </a>
       </Link>
       <NavMenuMobile />

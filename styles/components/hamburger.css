@@ -14,6 +14,6 @@
 
 .c-hamburger__bar {
   @apply h-1;
-  @apply bg-gray-800;
+  @apply bg-gray-100;
   @apply rounded-sm;
 }

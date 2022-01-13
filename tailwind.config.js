@@ -8,26 +8,22 @@ module.exports = {
   ],
   theme: {
     fill: (theme) => ({
-      white: theme('colors.white'),
+      'gray-100': theme('colors.gray.100'),
       'gray-500': theme('colors.gray.500'),
-      'gray-700': theme('colors.gray.700'),
-      'gray-800': theme('colors.gray.800'),
+      'primary-100': theme('colors.primary.100'),
     }),
     extend: {
       colors: {
         transparent: 'transparent',
         black: '#000',
         white: '#FFF',
-        gray: {
-          ...colors.gray,
-        },
         primary: {
-          100: '#274BE3',
-          200: '#2343cc',
+          100: '#2ac2c1',
+          200: '#219897',
         },
         secondary: {
-          100: '#27E4C0',
-          200: '#23cdac',
+          100: '#3B2C85',
+          200: '#22194C',
         },
         red: '#E5274C',
       },

@@ -2,12 +2,12 @@
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-3;
-  @apply bg-primary-100;
-  @apply text-white font-semibold uppercase;
+  @apply bg-primary-200;
+  @apply text-gray-100 font-semibold uppercase;
   @apply rounded;
   @apply transition duration-150 ease-in-out;
 }
 
 .c-btn:hover {
-  @apply bg-primary-200;
+  @apply bg-primary-100;
 }

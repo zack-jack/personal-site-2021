@@ -2,5 +2,6 @@
   @apply flex flex-col items-center;
   @apply min-h-screen;
   @apply px-8 py-20;
+  @apply bg-gray-800;
   scroll-margin-top: -1px;
 }

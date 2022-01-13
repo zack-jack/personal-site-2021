@@ -20,7 +20,7 @@
 
 .c-section-kicker__line {
   @apply w-10;
-  @apply bg-gray-800;
+  @apply bg-gray-100;
   height: 2px;
 }
 

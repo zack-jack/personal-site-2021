@@ -3,7 +3,7 @@
   @apply min-h-screen;
   @apply px-8 pb-10;
   @apply text-center;
-  padding-top: 100px;
+  padding-top: 88px; /* Header height */
 }
 
 .home-intro__hero {
@@ -30,23 +30,22 @@
 .home-intro__arrow-down-wrapper {
   @apply flex items-center justify-center;
   @apply w-10 h-10;
-  @apply border border-solid border-gray-400;
+  @apply border border-solid border-gray-600;
   @apply rounded-full;
   @apply transition duration-150 ease-in-out;
 }
 
 .home-intro__arrow-down-wrapper:hover {
-  @apply bg-primary-100;
-  @apply border-primary-100;
+  @apply bg-secondary-100;
+  @apply border-secondary-100;
 }
 
 .home-intro__arrow-down-wrapper:hover .home-intro__arrow-down {
-  @apply text-white;
-  @apply not-sr-only;
+  @apply text-gray-100;
 }
 
 .home-intro__arrow-down {
   @apply w-5;
-  @apply text-gray-400;
+  @apply text-gray-600;
   @apply transition duration-150 ease-in-out;
 }

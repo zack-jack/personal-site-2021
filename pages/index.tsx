@@ -8,6 +8,7 @@ import AppLink from 'components/AppLink';
 import Emoji from 'components/Emoji';
 import SectionHeading from 'components/SectionHeading';
 import ContactForm from 'components/ContactForm';
+import AnimatedBlob from 'components/AnimatedBlob';
 
 // SSR Suspense is not yet supported but maybe soon-ish? :(
 const BrandLogos = dynamic(() => import('components/BrandLogos'));
@@ -20,7 +21,7 @@ const Home: NextPage = (): ReactElement => (
         <div className="home-intro__hero-image-wrapper">
           <Image
             alt="A mac, keyboard, plant, and coffee cup on a desktop"
-            src="/assets/images/_image-desktop.svg"
+            src="/assets/images/_image-computer-setup.svg"
             width={300}
             height={300}
           />
@@ -36,7 +37,7 @@ const Home: NextPage = (): ReactElement => (
       <div className="home-intro__actions">
         <Link href="#about">
           <a className="mt-6">
-            <div className="home-intro__arrow-down-wrapper">
+            <div aria-hidden className="home-intro__arrow-down-wrapper">
               <ArrowNarrowDownIcon className="home-intro__arrow-down" />
             </div>
             <span className="sr-only">Scroll down to About Me Section</span>
@@ -45,6 +46,7 @@ const Home: NextPage = (): ReactElement => (
       </div>
     </section>
     <section id="about" className="home-about">
+      <AnimatedBlob className="home-about__blob" />
       <SectionHeading
         kicker="About me"
         heading={

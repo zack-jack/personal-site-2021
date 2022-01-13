@@ -2,8 +2,7 @@
   @apply flex flex-col items-center;
   @apply min-h-screen;
   @apply pt-20;
-  @apply bg-gray-100;
-  z-index: 1; /* required for bg and highlight z stacking */
+  @apply bg-gray-900;
 }
 
 .home-skills__heading-wrapper {

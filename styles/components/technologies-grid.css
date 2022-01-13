@@ -11,5 +11,5 @@
 
 .technologies-grid__icon {
   @apply w-16 h-16;
-  @apply fill-gray-800;
+  @apply fill-primary-100;
 }

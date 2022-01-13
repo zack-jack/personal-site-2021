@@ -1,7 +1,16 @@
 .home-about {
+  @apply relative;
   @apply flex flex-col items-center justify-center;
   @apply min-h-screen;
   @apply px-8 py-10;
+}
+
+.home-about__blob {
+  @apply absolute;
+  @apply opacity-80;
+  @apply -z-10;
+  top: 20%;
+  transform: scale(1.75);
 }
 
 .home-about__copy {
