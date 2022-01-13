@@ -2,8 +2,8 @@
   @apply flex items-center justify-center;
   @apply w-full;
   @apply px-6 py-3;
-  @apply bg-primary-200;
-  @apply text-gray-100 font-semibold uppercase;
+  @apply bg-secondary-100;
+  @apply text-white text-lg font-bold uppercase;
   @apply rounded;
   @apply transition duration-150 ease-in-out;
 }

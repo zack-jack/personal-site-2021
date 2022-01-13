@@ -3,7 +3,7 @@
 }
 
 .c-input-label {
-  @apply text-sm text-gray-500;
+  @apply text-sm text-gray-400;
 }
 
 .c-input-field {

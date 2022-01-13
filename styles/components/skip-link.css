@@ -1,7 +1,8 @@
 .skip-link {
   @apply absolute;
-  @apply p-1;
-  @apply bg-white;
+  @apply px-4 py-2;
+  @apply bg-secondary-200;
+  @apply text-gray-100 text-lg font-bold;
   @apply z-50;
   @apply transition duration-150 ease-in-out;
   transform: translateY(-120%);
