@@ -23,7 +23,7 @@ const Home: NextPage = (): ReactElement => (
         <div className="home-intro__hero-image-wrapper">
           <Image
             alt="A mac, keyboard, plant, and coffee cup on a desktop"
-            src="/assets/images/_image-computer-setup.svg"
+            src="https://res.cloudinary.com/tone-shop/image/upload/v1642434168/_image-computer-setup.svg"
             layout="fill"
           />
         </div>
