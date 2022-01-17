@@ -15,7 +15,7 @@ const NAV_LINKS = [
   {
     key: 'resume',
     name: <ResumeLink />,
-    href: '/Resume.pdf',
+    href: 'https://drive.google.com/file/d/1gftfwKtJQduPIyDr8OwJOhlou8pErWk_/view?usp=sharing',
     target: '_blank',
   },
 ];

@@ -16,7 +16,11 @@ const ITEMS_TRANSITION_DURATION = 200; // ms
 const TRANSITION_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/#about' },
-  { name: 'Résumé', href: '/Resume.pdf', target: '_blank' },
+  {
+    name: 'Résumé',
+    href: 'https://drive.google.com/file/d/1gftfwKtJQduPIyDr8OwJOhlou8pErWk_/view?usp=sharing',
+    target: '_blank',
+  },
   { name: 'Contact', href: '/#contact' },
 ];
 

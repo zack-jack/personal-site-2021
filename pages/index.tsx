@@ -110,7 +110,7 @@ const Home: NextPage = (): ReactElement => (
         <SectionHeading kicker="Let's Talk" heading="Contact Me" />
         <ContactForm className="mt-10 1024:mt-16" />
         <div className="mt-20">
-          <Link href="/Resume.pdf">
+          <Link href="https://drive.google.com/file/d/1gftfwKtJQduPIyDr8OwJOhlou8pErWk_/view?usp=sharing">
             <a
               target="_blank"
               rel="noopener noreferrer"
