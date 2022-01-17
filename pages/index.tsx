@@ -2,20 +2,19 @@ import { ReactElement } from 'react';
 import type { NextPage } from 'next';
 import { CloudDownloadIcon } from '@heroicons/react/outline';
 import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
-import dynamic from 'next/dynamic';
+import loadable from '@loadable/component';
 import Image from 'next/image';
 import Link from 'next/link';
 import LazyLoad from 'react-lazyload';
-import AnimatedBlob from 'components/AnimatedBlob';
 import AppLink from 'components/AppLink';
-import ContactForm from 'components/ContactForm';
 import Emoji from 'components/Emoji';
 import HomeIntroHeadings from 'components/HomeIntroHeadings';
 import SectionHeading from 'components/SectionHeading';
 
-// SSR Suspense is not yet supported but maybe soon-ish? :(
-const BrandLogos = dynamic(() => import('components/BrandLogos'));
-const TechnologiesGrid = dynamic(() => import('components/TechnologiesGrid'));
+const AnimatedBlob = loadable(() => import('components/AnimatedBlob'));
+const BrandLogos = loadable(() => import('components/BrandLogos'));
+const ContactForm = loadable(() => import('components/ContactForm'));
+const TechnologiesGrid = loadable(() => import('components/TechnologiesGrid'));
 
 const Home: NextPage = (): ReactElement => (
   <div className="home">
