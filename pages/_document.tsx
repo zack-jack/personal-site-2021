@@ -18,6 +18,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="dns-prefetch" href="//fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
