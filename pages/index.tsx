@@ -58,7 +58,7 @@ const Home: NextPage = (): ReactElement => (
             </>
           }
         />
-        <div className="home-about__copy mt-10">
+        <div className="mt-10 home-about__copy">
           <p>
             {
               "I'm a web developer who strives to build delightful and accessible user experiences."
@@ -90,7 +90,7 @@ const Home: NextPage = (): ReactElement => (
             heading="Some of My Favorite Developer Tools"
           />
         </div>
-        <div className="home-skills__grid-wrapper mt-10 1024:mt-16">
+        <div className="mt-10 home-skills__grid-wrapper 1024:mt-16">
           <LazyLoad offset={200} once>
             <TechnologiesGrid />
           </LazyLoad>
@@ -110,11 +110,11 @@ const Home: NextPage = (): ReactElement => (
         <SectionHeading kicker="Let's Talk" heading="Contact Me" />
         <ContactForm className="mt-10 1024:mt-16" />
         <div className="mt-20">
-          <Link href="https://drive.google.com/file/d/1gftfwKtJQduPIyDr8OwJOhlou8pErWk_/view?usp=sharing">
+          <Link href="https://drive.google.com/file/d/1sgLTMTH87mnNxcgLc4HPjWJLbZOKWZ6O/view?usp=sharing">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="c-link py-1"
+              className="py-1 c-link"
             >
               <span>Download Résumé</span>
               <CloudDownloadIcon className="w-5 h-5 ml-2 text-primary-100" />

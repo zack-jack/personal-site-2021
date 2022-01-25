@@ -18,7 +18,7 @@ const TRANSITION_ITEMS = [
   { name: 'About', href: '/#about' },
   {
     name: 'Résumé',
-    href: 'https://drive.google.com/file/d/1gftfwKtJQduPIyDr8OwJOhlou8pErWk_/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1sgLTMTH87mnNxcgLc4HPjWJLbZOKWZ6O/view?usp=sharing',
     target: '_blank',
   },
   { name: 'Contact', href: '/#contact' },
