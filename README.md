@@ -1,7 +1,7 @@
-# Sup nerds :wave:
-
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=zackjackson)
+# Zack Jackson
 
 Personal website
 
-[https://zackjackson.vercel.app/](https://zackjackson.vercel.app/)
+[https://zack-jack.vercel.app/](https://zack-jack.vercel.app/)
+
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=zack-jack)
